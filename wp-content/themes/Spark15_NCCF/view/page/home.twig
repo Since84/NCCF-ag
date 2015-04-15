@@ -9,8 +9,15 @@
 {{ updates_nav }}
 
 {# Video Feed #}
-<div class="video-block">
+<div class="video-block videojs">
 	<span class="video-link">Play Video</span>
+	<div class="md-modal md-effect-13" id="modal-13">
+		<div class="md-content">
+			<iframe width="500" height="300" data-src="https://www.youtube.com/embed/3OoR6VyBNcE" frameborder="0" allowfullscreen></iframe>		
+			<button class="md-close">Close</button>
+		</div>
+	</div>	
+	<div class="md-overlay"></div>
 </div>
 <ul class="videos">
 	{{ video_feed }}

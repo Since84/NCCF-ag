@@ -13,6 +13,7 @@
   		//Delegated Events for user actions
   		events: {
   			 'click .video .thumb': 'openVideo'
+  			,'click .video-link': 'openVideo'
   			,'click .md-modal .md-close': 'closeVideo'
   			,'click .mobile-nav-trigger': 'toggleNav'
   		},
@@ -24,7 +25,7 @@
 	    	$(".shop").smoothDivScroll();
 	    }
 	    ,openVideo: function(e){
-	    	var $elem 	= $(e.currentTarget).parents('.video');
+	    	var $elem 	= $(e.currentTarget).parents('.videojs');
 	    	var src 	= $elem.find('iframe').data('src') + '?autoplay=1';
 	    	$elem.find('.md-modal').addClass('md-show')
 				 .find('iframe').attr('src', src);	    	
