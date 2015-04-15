@@ -1,0 +1,51 @@
+/**
+
+Style Guide
+
+**/
+
+
+// COLORS
+$yellow: #c7c900;
+$black: black;
+$lightgray: #404040;
+$darkgray: #1c1c1c;
+$red: #e60031;
+
+//ICONS
+$menu: "\f0c9"; 
+
+//IMAGES
+$video-bg: url( 'style/images/video-bg.jpg' );
+$video-pattern: url( 'style/images/video-pattern.jpg' );
+$contact-bg: url( 'style/images/contact-bg.jpg' );
+$sponsor-bg: url( 'style/images/sponsor-bg.jpg' );
+$sponsor-bg: url( 'style/images/sponsor-bg.jpg' );
+$icon-mail: url( 'style/images/icon-mail-512.png' );
+$icon-contacts: url( 'style/images/icon-contacts-512.png' );
+$icon-message: url( 'style/images/icon-message-512.png' );
+$play-button: url( 'style/images/play-button.png' );
+
+// TYPOGRAPHY
+@mixin largeheader {
+	font-size: 100px;
+	font-family: "Lato";
+	font-weight: 300;
+}
+
+@mixin nav { 
+	font-size: 13px;
+	font-family: "Lato";
+	text-transform: uppercase;
+	&:hover {
+		color: $yellow;
+	}
+}
+
+@mixin header2{
+	font-size: 30px;
+	font-family: "Lato";
+	text-transform: uppercase;
+}
+
+// UI

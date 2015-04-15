@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*
+Theme Name: NCCF - Spark Child
+Template: Spark15
+*/
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+
+Style Guide
+
+**/
+/* line 9, style/sass/style.scss */
+html body {
+  font-family: 'Lato';
+  font-size: 16px;
+  background: black;
+}
+/* line 14, style/sass/style.scss */
+html body > * {
+  box-sizing: border-box;
+}
+
+/* line 19, style/sass/style.scss */
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 23, style/sass/style.scss */
+a:hover {
+  color: #c7c900;
+}
+
+/* line 28, style/sass/style.scss */
+.container {
+  width: 1200px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+/* line 37, style/sass/style.scss */
+header {
+  height: 90px;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+/* line 42, style/sass/style.scss */
+header .logo {
+  position: absolute;
+  display: block;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* line 51, style/sass/style.scss */
+.mobile-nav-trigger {
+  position: absolute;
+  display: block;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1em;
+}
+/* line 59, style/sass/style.scss */
+.mobile-nav-trigger:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 26px;
+  color: white;
+}
+/* line 65, style/sass/style.scss */
+.mobile-nav-trigger:hover {
+  color: #c7c900;
+}
+
+/* line 69, style/sass/style.scss */
+.mobile-nav {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  right: -200px;
+  background: black;
+}
+/* line 76, style/sass/style.scss */
+.mobile-nav li {
+  padding: 20px;
+}
+
+/* line 82, style/sass/style.scss */
+.team-slider {
+  display: block;
+}
+
+/* line 86, style/sass/style.scss */
+.updates {
+  background: #1c1c1c;
+  display: block;
+  padding: 25px;
+  text-align: center;
+}
+/* line 91, style/sass/style.scss */
+.updates li {
+  display: inline-block;
+}
+/* line 93, style/sass/style.scss */
+.updates li a {
+  display: block;
+  border: 1px solid #404040;
+  padding: 20px 0;
+  width: 450px;
+  font-weight: 300;
+}
+/* line 99, style/sass/style.scss */
+.updates li a strong {
+  font-weight: bold;
+}
+/* line 102, style/sass/style.scss */
+.updates li a:first-child {
+  margin-right: 25px;
+}
+
+/* line 108, style/sass/style.scss */
+.video-block {
+  background: url("style/images/video-bg.jpg");
+  text-align: center;
+  padding: 100px;
+}
+/* line 112, style/sass/style.scss */
+.video-block span {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 116, style/sass/style.scss */
+.video-block span:before {
+  content: '';
+  background: url("style/images/play-button.png");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* line 128, style/sass/style.scss */
+.videos {
+  background: url("style/images/video-pattern.jpg");
+  background-size: cover;
+  padding: 50px 0;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+/* line 135, style/sass/style.scss */
+.videos .video {
+  flex: 1;
+}
+
+/* line 140, style/sass/style.scss */
+.shop {
+  background-size: cover;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-indent: -50px;
+}
+/* line 147, style/sass/style.scss */
+.shop .product {
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+  width: 240px;
+  text-align: center;
+  transform: skew(-18deg);
+  padding: 40px 60px;
+  background: white;
+}
+/* line 156, style/sass/style.scss */
+.shop .product > * {
+  transform: skew(18deg);
+}
+/* line 159, style/sass/style.scss */
+.shop .product:nth-child(2n) {
+  background: #c7c900;
+}
+/* line 160, style/sass/style.scss */
+.shop .product:nth-child(3n) {
+  background: #404040;
+}
+
+/* line 165, style/sass/style.scss */
+div.wpcf7 {
+  text-align: center;
+  padding: 100px 50px;
+  display: block;
+  background: url("style/images/contact-bg.jpg");
+}
+
+/* line 171, style/sass/style.scss */
+.wpcf7-form {
+  display: inline-block;
+  width: 400px;
+}
+/* line 174, style/sass/style.scss */
+.wpcf7-form .wpcf7-form-control-wrap {
+  border: 1px solid white;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  padding-right: 10px;
+  margin-bottom: 1em;
+}
+/* line 181, style/sass/style.scss */
+.wpcf7-form .wpcf7-form-control-wrap:before {
+  content: '';
+  display: inline-block;
+  width: 2em;
+  height: 2.2em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 189, style/sass/style.scss */
+.wpcf7-form .wpcf7-form-control-wrap.your-name:before {
+  background-image: url("style/images/icon-contacts-512.png");
+}
+/* line 192, style/sass/style.scss */
+.wpcf7-form .wpcf7-form-control-wrap.your-email:before {
+  background-image: url("style/images/icon-mail-512.png");
+}
+/* line 195, style/sass/style.scss */
+.wpcf7-form .wpcf7-form-control-wrap.your-message:before {
+  background-image: url("style/images/icon-message-512.png");
+}
+/* line 199, style/sass/style.scss */
+.wpcf7-form input:not([type="submit"]), .wpcf7-form textarea {
+  flex: 1;
+  display: inline-block;
+  color: white;
+  border: none;
+  width: 100%;
+  background: none;
+  text-transform: uppercase;
+}
+/* line 208, style/sass/style.scss */
+.wpcf7-form input[type="submit"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 217, style/sass/style.scss */
+.sponsors {
+  background: url("style/images/sponsor-bg.jpg");
+  text-align: center;
+  padding: 20px;
+}
+/* line 222, style/sass/style.scss */
+.sponsors .sponsor img {
+  width: 150px;
+  height: auto;
+}
+
+/* line 229, style/sass/style.scss */
+footer.container {
+  display: block;
+  padding: 20px;
+  background: black;
+  position: relative;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 238, style/sass/style.scss */
+footer.container .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}

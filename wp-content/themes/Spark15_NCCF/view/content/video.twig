@@ -1,0 +1,6 @@
+{# {{ dump(slide) }} #}
+<li class="video">
+	{% if slide.service == "YouTube" %}
+		<iframe width="310" height="195" src="https://www.youtube.com/embed/{{ slide.id }}" frameborder="0" allowfullscreen></iframe>
+	{% endif %}
+</li>

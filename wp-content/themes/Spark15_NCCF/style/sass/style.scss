@@ -1,0 +1,244 @@
+/*
+Theme Name: NCCF - Spark Child
+Template: Spark15
+*/
+@import "compass/reset";
+@import "brand/style_guide";
+
+//Base
+html body{
+	font-family: 'Lato';
+	font-size: 16px;
+	background: $black;
+
+	& > * {
+		box-sizing: border-box;
+	}
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover{
+		color: $yellow;
+	}
+}
+
+.container{
+	width: 1200px;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
+
+//Header
+header{
+	height: 90px;
+	width: 100%;
+	background: $black;
+	position: relative;
+	.logo{
+		position: absolute;
+		display: block;
+		left: 50px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
+.mobile-nav-trigger{
+	position: absolute;
+	display: block;
+	right: 50px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height:1em;
+	&:before{
+		content: $menu;
+		font-family: "FontAwesome";
+		font-size: 26px;
+		color: white;
+	}
+	&:hover{
+		color: $yellow;
+	}
+}
+.mobile-nav{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	top: 0;
+	right: -200px;
+	background: $black;
+	li {
+		padding: 20px;
+	}
+
+}
+
+.team-slider{
+	display: block;
+}
+
+.updates{
+	background: $darkgray;
+	display: block;
+	padding: 25px;
+	text-align: center;
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			border: 1px solid $lightgray;
+			padding: 20px 0;
+			width: 450px;
+			font-weight: 300;
+			strong{
+				font-weight: bold;
+			}
+			&:first-child{
+				margin-right: 25px;
+			}
+		}		
+	}
+}
+.video-block{
+	background: $video-bg;
+	text-align: center;
+	padding: 100px;
+	span {
+		position: relative;
+		color: white;
+		text-transform: uppercase;
+		&:before{
+			content: '';
+			background: $play-button;
+			background-size: contain;
+			width: 50px;
+			height: 50px;
+			display: block;
+			margin: auto;
+			margin-bottom: 20px;
+		}
+	}
+}
+.videos{
+	background: $video-pattern;
+	background-size: cover;
+	padding: 50px 0;
+	display: flex;
+	width: 100%;
+	text-align: center;
+	.video{
+		flex: 1;
+	}
+}
+
+.shop{
+	background-size: cover;
+	white-space: nowrap;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	text-indent: -50px;
+	.product{
+		display: inline-block;
+		vertical-align: top;
+		height: 300px;
+		width: 240px;
+		text-align: center;
+		transform: skew(-18deg);
+		padding: 40px 60px;
+		background: white;
+		& > * {
+			transform: skew(18deg);
+		}
+		&:nth-child(2n){ background: $yellow; }
+		&:nth-child(3n){ background: $lightgray; }
+	}
+}
+
+//Form
+div.wpcf7{
+	text-align: center;
+	padding: 100px 50px;
+	display: block;
+	background: $contact-bg;
+}
+.wpcf7-form{
+	display: inline-block;
+	width: 400px;
+	.wpcf7-form-control-wrap{
+		border: 1px solid white;
+		display: flex;
+		width: 100%;
+		padding: 10px;
+		padding-right: 10px;
+		margin-bottom: 1em;
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 2em;
+			height: 2.2em;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		&.your-name:before{
+			background-image: $icon-contacts;
+		}
+		&.your-email:before{
+			background-image: $icon-mail;
+		}
+		&.your-message:before{
+			background-image: $icon-message;
+		}
+	}
+	input:not([type="submit"]), textarea{
+		flex:1;
+		display: inline-block;
+		color: white;
+		border:none;
+		width: 100%;
+		background: none;
+		text-transform: uppercase;
+	}
+	input[type="submit"]{
+		background: none;
+		border: none;
+		border-bottom: 1px solid white;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+
+.sponsors{
+	background: $sponsor-bg;
+	text-align: center;
+	padding: 20px;
+	.sponsor{
+		img{
+			width: 150px;
+			height: auto;
+		}
+	}
+}
+
+footer.container{
+	display: block;
+	// height: 90px;
+	padding: 20px; 
+	background: $black;
+	position: relative;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	.logo{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 1em;
+	}
+}
+
