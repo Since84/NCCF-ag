@@ -5,6 +5,7 @@ Template: Spark15
 @import "compass/reset";
 @import "brand/style_guide";
 @import "component/modal";
+@import "component/team-slider";
 
 //Base
 html body{
@@ -58,14 +59,22 @@ header{
 	bottom: 0;
 	margin: auto;
 	height:1em;
+	transition: 300ms right ease-in-out;
 	&:before{
 		content: $menu;
 		font-family: "FontAwesome";
 		font-size: 26px;
 		color: white;
 	}
-	&:hover{
+	&:hover:before{
 		color: $yellow;
+	}
+	.nav-open & {
+		right: 150px;
+		transition-delay: 170ms;
+		&:before{
+			color: $yellow;
+		}
 	}
 }
 .mobile-nav{
@@ -74,12 +83,13 @@ header{
 	height: 100%;
 	top: 90px;
 	right: -200px;
-	background: $black;
+	background: rgba(0,0,0,.85);
 	transition: right 500ms ease-in-out; 
+	z-index: 2000;
 	li {
 		padding: 20px;
 	}
-	&.nav-open{
+	.nav-open &{
 		right: 0;
 	}
 
@@ -87,6 +97,29 @@ header{
 
 .team-slider{
 	display: block;
+	position: relative;
+	overflow: hidden;
+	&:before{
+		content:"#TeamNC2015";
+		display: block;
+		@include largeheader;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		height: 1em;
+		z-index: 100;
+		color: white;
+		opacity: 1;
+		transition: 500ms all ease-in-out;
+	}
+	&:hover:before{
+		top: -1000px;
+		opacity: 0;
+
+	}
 }
 
 .updates{
@@ -120,8 +153,9 @@ header{
 		color: white;
 		text-transform: uppercase;
 		&:before{
-			content: $play;
-			font-family: "FontAwesome";
+			content: '';
+			background: $play-button;
+			background-size: contain;
 			font-size: 50px;
 			display: block;
 			margin: auto;
@@ -130,7 +164,7 @@ header{
 			height: 50px;
 		}
 		&:hover:before{
-			color: $yellow;
+			background-image: $play-button-red;
 		}
 	}
 }
@@ -147,8 +181,9 @@ header{
 		img{ width: 260px; }
 		.thumb{
 			&:before{
-				content: $play;
-				font-family: "FontAwesome";
+				content: '';
+				background: $play-button;
+				background-size: contain;
 				font-size: 50px;
 				display: block;
 				position: absolute;
@@ -161,7 +196,7 @@ header{
 				height: 50px;
 			}
 			&:hover:before{
-				color: $yellow;
+				background-image: $play-button-red;
 			}
 		}
 	}
@@ -198,6 +233,7 @@ div.wpcf7{
 	padding: 100px 50px;
 	display: block;
 	background: $contact-bg;
+	background-size: cover;
 }
 .wpcf7-form{
 	display: inline-block;

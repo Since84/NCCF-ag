@@ -12,7 +12,12 @@ $headerContext 	= array(
 $context["header"] = Timber::compile("view/section/header.twig", $headerContext);
 
 // Team Accordion 
-$context["team_slider"] = Timber::compile("view/section/team-slider.twig");
+$teamPost = new TimberPost("Team");
+$teamFeedContext = array( 
+	 "slide_template" => 'view/content/member.twig'
+	,"feed" => $teamPost->get_field('team') 
+);
+$context["team_slider"] = Timber::compile("view/section/team-slider.twig", $teamFeedContext);
 
 // Blog Nav 
 $updatesnavContext = array( 

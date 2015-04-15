@@ -1,0 +1,42 @@
+/*
+
+Team Slider
+
+*/
+
+.team-slider{
+	display: flex;
+	white-space: nowrap;
+	text-align: center;
+	.slide{
+		// flex: 1;
+		position:relative;
+		display: inline-block;
+		transform: skew(-18deg);
+		height: 540px;
+		width: 20%;
+		overflow: hidden;
+		transition: 500ms width ease-in-out;
+		&:hover, &.open{
+			width: 0%; 
+		}
+		.slide-container{
+			position: absolute;
+			width: 1200px;
+			height: 100%;
+			left: -100px;
+			margin: auto;
+			transform: skew(18deg);
+			background-size: cover;
+			background-position: top left;
+		}
+	}
+	&:hover .slide{
+		&:not(:hover){
+			width: 5%;
+		}
+		&:hover{
+			width: 80%;
+		}
+	}
+}

@@ -34,7 +34,7 @@
 	    	var $elem = $(e.currentTarget).parents('.md-modal').removeClass('md-show');
 	    }
 	    ,toggleNav: function(){
-	    	$('.mobile-nav').toggleClass('nav-open');
+	    	$('body').toggleClass('nav-open');
 	    }
 
   	});
