@@ -41,18 +41,44 @@ Team Slider
 				left: 0;
 				width: 100%;
 				background: $redopaque;
+				color: white;
 				opacity:0;
 				transition: 250ms all 200ms;
 				bottom: -50px;
 				padding: 20px;
 				font-size: 16px;
 				line-height: 1.3em;
+				span.close{
+					display: inline-block;
+					vertical-align: middle;
+					font-family: "FontAwesome";
+					width: 30px;
+					height: 30px;
+					margin-right: 10px;
+					border: 1px solid;
+					border-radius: 50%;
+					position: relative;
+					&:before{
+						content: $close;
+						font-family: "FontAwesome";
+						display: inline-block;
+						font-size: 16px;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						width: 0.9em;
+						height: 1.3em;
+					}
+				}
 				.name{
 					float:left;
-					margin-left: 120px;
+					margin-left: 50px;
+
 					width: 400px;
 					text-align: left;
-					color: $black;
 					@include header2;
 					margin-top: 5px;
 				}
@@ -64,13 +90,13 @@ Team Slider
 						vertical-align: middle;
 						padding: 0 10px;
 						&:not(:first-child){
-							border-left: 1px solid $black;
+							border-left: 1px solid white;
 						}
 						.play{
 							display: block;
 							width: 25px;
 							height: 25px;
-							background: $play-button;
+							background: $play-button-white;
 							background-size: contain;
 							background-repeat: no-repeat;
 						}

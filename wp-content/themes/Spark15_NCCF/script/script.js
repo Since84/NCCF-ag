@@ -17,7 +17,8 @@
   			,'click .md-modal .md-close': 'closeVideo'
   			,'click .mobile-nav-trigger': 'toggleNav'
   			,'click .member-bio .name': 'openMember'
-  			,'click .team-slider .slide': 'openMemberHome'
+  			,'click .team-slider .slide:not(.open)': 'openMemberHome'
+  			,'click .team-slider .close': 'closeMemberHome'
   		},
 
   		initialize: function(){
@@ -41,11 +42,17 @@
 	    ,openMember: function(e){
 	    	var $member = $(e.currentTarget).parents('.member-bio');
 	    	var index = $member.data('index');
-
-	    	$('[data-index='+index+']').addClass('open').siblings().removeClass('open');
+	    	if( $member.hasClass('open') ){
+	    		$('[data-index='+index+']').removeClass('open');
+	    	}else{
+	    		$('[data-index='+index+']').addClass('open').siblings().removeClass('open');
+	    	}
 	    }
 	    ,openMemberHome: function(e){
 	    	$(e.currentTarget).addClass('open').siblings().removeClass('open');
+	    }
+	    ,closeMemberHome: function(e){
+	    	$(e.currentTarget).parents('.open').removeClass('open');
 	    }
 
   	});
