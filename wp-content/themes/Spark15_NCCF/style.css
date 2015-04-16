@@ -211,17 +211,17 @@ Team Slider
 }
 /* line 11, style/sass/component/_team-slider.scss */
 .team-slider .slide {
+  flex: 1;
   position: relative;
   display: inline-block;
   transform: skew(-18deg);
   height: 540px;
-  width: 20%;
   overflow: hidden;
-  transition: 500ms width ease-in-out;
+  transition: 500ms all ease-in-out;
 }
 /* line 20, style/sass/component/_team-slider.scss */
 .team-slider .slide:hover, .team-slider .slide.open {
-  width: 0%;
+  flex: 10;
 }
 /* line 22, style/sass/component/_team-slider.scss */
 .team-slider .slide:hover .slide-container .info, .team-slider .slide.open .slide-container .info {
@@ -289,14 +289,6 @@ Team Slider
   background: url("style/images/play_button.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
-/* line 84, style/sass/component/_team-slider.scss */
-.team-slider:hover .slide:not(:hover) {
-  width: 5%;
-}
-/* line 87, style/sass/component/_team-slider.scss */
-.team-slider:hover .slide:hover {
-  width: 80%;
 }
 
 /*
@@ -497,11 +489,10 @@ header .logo {
 
 /* line 100, style/sass/style.scss */
 .team-slider {
-  display: block;
   position: relative;
   overflow: hidden;
 }
-/* line 104, style/sass/style.scss */
+/* line 103, style/sass/style.scss */
 .team-slider:before {
   content: "#TeamNC2015";
   display: block;
@@ -520,24 +511,24 @@ header .logo {
   opacity: 1;
   transition: 500ms all ease-in-out;
 }
-/* line 120, style/sass/style.scss */
+/* line 119, style/sass/style.scss */
 .team-slider:hover:before {
   top: -1000px;
   opacity: 0;
 }
 
-/* line 127, style/sass/style.scss */
+/* line 126, style/sass/style.scss */
 .updates {
   background: #1c1c1c;
   display: block;
   padding: 25px;
   text-align: center;
 }
-/* line 132, style/sass/style.scss */
+/* line 131, style/sass/style.scss */
 .updates li {
   display: inline-block;
 }
-/* line 134, style/sass/style.scss */
+/* line 133, style/sass/style.scss */
 .updates li a {
   display: block;
   border: 1px solid #404040;
@@ -545,28 +536,28 @@ header .logo {
   width: 450px;
   font-weight: 300;
 }
-/* line 140, style/sass/style.scss */
+/* line 139, style/sass/style.scss */
 .updates li a strong {
   font-weight: bold;
 }
-/* line 143, style/sass/style.scss */
+/* line 142, style/sass/style.scss */
 .updates li a:first-child {
   margin-right: 25px;
 }
 
-/* line 149, style/sass/style.scss */
+/* line 148, style/sass/style.scss */
 .video-block {
   background: url("style/images/video-bg.jpg");
   text-align: center;
   padding: 100px;
 }
-/* line 153, style/sass/style.scss */
+/* line 152, style/sass/style.scss */
 .video-block span {
   position: relative;
   color: white;
   text-transform: uppercase;
 }
-/* line 157, style/sass/style.scss */
+/* line 156, style/sass/style.scss */
 .video-block span:before {
   content: '';
   background: url("style/images/play_button.png");
@@ -578,12 +569,12 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-/* line 168, style/sass/style.scss */
+/* line 167, style/sass/style.scss */
 .video-block span:hover:before {
   background-image: url("style/images/play_button_red.png");
 }
 
-/* line 173, style/sass/style.scss */
+/* line 172, style/sass/style.scss */
 .videos {
   background: url("style/images/video-pattern.jpg");
   background-size: cover;
@@ -592,16 +583,16 @@ header .logo {
   width: 100%;
   text-align: center;
 }
-/* line 180, style/sass/style.scss */
+/* line 179, style/sass/style.scss */
 .videos .video {
   flex: 1;
   position: relative;
 }
-/* line 183, style/sass/style.scss */
+/* line 182, style/sass/style.scss */
 .videos .video img {
   width: 260px;
 }
-/* line 185, style/sass/style.scss */
+/* line 184, style/sass/style.scss */
 .videos .video .thumb:before {
   content: '';
   background: url("style/images/play_button.png");
@@ -617,12 +608,12 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-/* line 200, style/sass/style.scss */
+/* line 199, style/sass/style.scss */
 .videos .video .thumb:hover:before {
   background-image: url("style/images/play_button_red.png");
 }
 
-/* line 207, style/sass/style.scss */
+/* line 206, style/sass/style.scss */
 .shop {
   position: relative;
   background-size: cover;
@@ -632,7 +623,7 @@ header .logo {
   overflow: hidden;
   text-indent: -50px;
 }
-/* line 215, style/sass/style.scss */
+/* line 214, style/sass/style.scss */
 .shop .product {
   display: inline-block;
   vertical-align: top;
@@ -643,20 +634,20 @@ header .logo {
   padding: 40px 60px;
   background: white;
 }
-/* line 224, style/sass/style.scss */
+/* line 223, style/sass/style.scss */
 .shop .product > * {
   transform: skew(18deg);
 }
-/* line 227, style/sass/style.scss */
+/* line 226, style/sass/style.scss */
 .shop .product:nth-child(2n) {
   background: #c7c900;
 }
-/* line 228, style/sass/style.scss */
+/* line 227, style/sass/style.scss */
 .shop .product:nth-child(3n) {
   background: #404040;
 }
 
-/* line 233, style/sass/style.scss */
+/* line 232, style/sass/style.scss */
 div.wpcf7 {
   text-align: center;
   padding: 100px 50px;
@@ -665,12 +656,12 @@ div.wpcf7 {
   background-size: cover;
 }
 
-/* line 240, style/sass/style.scss */
+/* line 239, style/sass/style.scss */
 .wpcf7-form {
   display: inline-block;
   width: 400px;
 }
-/* line 243, style/sass/style.scss */
+/* line 242, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap {
   border: 1px solid white;
   display: flex;
@@ -679,7 +670,7 @@ div.wpcf7 {
   padding-right: 10px;
   margin-bottom: 1em;
 }
-/* line 250, style/sass/style.scss */
+/* line 249, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap:before {
   content: '';
   display: inline-block;
@@ -688,19 +679,19 @@ div.wpcf7 {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 258, style/sass/style.scss */
+/* line 257, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-name:before {
   background-image: url("style/images/icon-contacts-512.png");
 }
-/* line 261, style/sass/style.scss */
+/* line 260, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-email:before {
   background-image: url("style/images/icon-mail-512.png");
 }
-/* line 264, style/sass/style.scss */
+/* line 263, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-message:before {
   background-image: url("style/images/icon-message-512.png");
 }
-/* line 268, style/sass/style.scss */
+/* line 267, style/sass/style.scss */
 .wpcf7-form input:not([type="submit"]), .wpcf7-form textarea {
   flex: 1;
   display: inline-block;
@@ -710,7 +701,7 @@ div.wpcf7 {
   background: none;
   text-transform: uppercase;
 }
-/* line 277, style/sass/style.scss */
+/* line 276, style/sass/style.scss */
 .wpcf7-form input[type="submit"] {
   background: none;
   border: none;
@@ -719,19 +710,19 @@ div.wpcf7 {
   text-transform: uppercase;
 }
 
-/* line 286, style/sass/style.scss */
+/* line 285, style/sass/style.scss */
 .sponsors {
   background: url("style/images/sponsor-bg.jpg");
   text-align: center;
   padding: 20px;
 }
-/* line 291, style/sass/style.scss */
+/* line 290, style/sass/style.scss */
 .sponsors .sponsor img {
   width: 150px;
   height: auto;
 }
 
-/* line 298, style/sass/style.scss */
+/* line 297, style/sass/style.scss */
 footer.container {
   display: block;
   padding: 20px;
@@ -741,7 +732,7 @@ footer.container {
   color: white;
   text-transform: uppercase;
 }
-/* line 307, style/sass/style.scss */
+/* line 306, style/sass/style.scss */
 footer.container .logo {
   display: inline-block;
   vertical-align: middle;

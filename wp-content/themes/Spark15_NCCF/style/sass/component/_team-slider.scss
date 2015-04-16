@@ -9,16 +9,16 @@ Team Slider
 	white-space: nowrap;
 	text-align: center;
 	.slide{
-		// flex: 1;
+		flex: 1;
 		position:relative;
 		display: inline-block;
 		transform: skew(-18deg);
 		height: 540px;
-		width: 20%;
+		// width: 20%;
 		overflow: hidden;
-		transition: 500ms width ease-in-out;
+		transition: 500ms all ease-in-out;
 		&:hover, &.open{
-			width: 0%; 
+			flex: 10; 
 			.slide-container .info{
 				opacity: 1;
 				bottom: 0;
@@ -78,14 +78,6 @@ Team Slider
 
 				}
 			}
-		}
-	}
-	&:hover .slide{
-		&:not(:hover){
-			width: 5%;
-		}
-		&:hover{
-			width: 80%;
 		}
 	}
 }
