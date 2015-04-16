@@ -560,7 +560,7 @@ header .logo {
 /* line 156, style/sass/style.scss */
 .video-block span:before {
   content: '';
-  background: url("style/images/play_button.png");
+  background: url("style/images/play_button_white.png");
   background-size: contain;
   font-size: 50px;
   display: block;
@@ -571,7 +571,7 @@ header .logo {
 }
 /* line 167, style/sass/style.scss */
 .video-block span:hover:before {
-  background-image: url("style/images/play_button_red.png");
+  background-image: url("style/images/play_button_yellow.png");
 }
 
 /* line 172, style/sass/style.scss */
@@ -595,7 +595,7 @@ header .logo {
 /* line 184, style/sass/style.scss */
 .videos .video .thumb:before {
   content: '';
-  background: url("style/images/play_button.png");
+  background: url("style/images/play_button_red.png");
   background-size: contain;
   font-size: 50px;
   display: block;
@@ -610,7 +610,7 @@ header .logo {
 }
 /* line 199, style/sass/style.scss */
 .videos .video .thumb:hover:before {
-  background-image: url("style/images/play_button_red.png");
+  background-image: url("style/images/play_button_white.png");
 }
 
 /* line 206, style/sass/style.scss */

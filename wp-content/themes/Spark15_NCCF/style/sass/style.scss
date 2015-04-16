@@ -155,7 +155,7 @@ header{
 		text-transform: uppercase;
 		&:before{
 			content: '';
-			background: $play-button;
+			background: $play-button-white;
 			background-size: contain;
 			font-size: 50px;
 			display: block;
@@ -165,7 +165,7 @@ header{
 			height: 50px;
 		}
 		&:hover:before{
-			background-image: $play-button-red;
+			background-image: $play-button-yellow;
 		}
 	}
 }
@@ -183,7 +183,7 @@ header{
 		.thumb{
 			&:before{
 				content: '';
-				background: $play-button;
+				background: $play-button-red;
 				background-size: contain;
 				font-size: 50px;
 				display: block;
@@ -197,7 +197,7 @@ header{
 				height: 50px;
 			}
 			&:hover:before{
-				background-image: $play-button-red;
+				background-image: $play-button-white;
 			}
 		}
 	}
