@@ -1,0 +1,27 @@
+{# <img class="team-slider" src="{{ bloginfo('stylesheet_directory') }}/style/images/team-screen.jpg"/> #}
+<ul class="team-accordion">
+	<div class="bios">
+		<ul class="accordion">
+		{% for member in feed %}
+		<li class="member-bio slide" data-index="{{ loop.index }}">
+			<div class="slide-container">
+				<div class="info">
+					<span class="name">{{ member.name }}</span>
+					<ul class="stats">
+						<li><span class="label">Height: </span> 6'1</li>				
+						<li><span class="label">Weight: </span> 250lb</li>
+						<li class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</li>
+					</ul>
+				</div>
+			</div>
+		{% endfor %}
+		</ul>
+	</div>
+	<div class="pics">
+		<ul class="accordion">
+		{% for member in feed %}
+		<li class="member-pic slide" data-index="{{ loop.index }}" style="background-image:url({{ member.background.url }});">
+		{% endfor %}
+		</ul>
+	</div>
+</ul>

@@ -6,6 +6,7 @@ Template: Spark15
 @import "brand/style_guide";
 @import "component/modal";
 @import "component/team-slider";
+@import "component/team-accordion";
 
 //Base
 html body{
@@ -42,6 +43,7 @@ header{
 	width: 100%;
 	background: $black;
 	position: relative;
+	z-index: 2000;
 	.logo{
 		position: absolute;
 		display: block;

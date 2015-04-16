@@ -16,6 +16,7 @@
   			,'click .video-link': 'openVideo'
   			,'click .md-modal .md-close': 'closeVideo'
   			,'click .mobile-nav-trigger': 'toggleNav'
+  			,'click .member-bio .name': 'openMember'
   		},
 
   		initialize: function(){
@@ -35,6 +36,12 @@
 	    }
 	    ,toggleNav: function(){
 	    	$('body').toggleClass('nav-open');
+	    }
+	    ,openMember: function(e){
+	    	var $member = $(e.currentTarget).parents('.member-bio');
+	    	var index = $member.data('index');
+
+	    	$('[data-index='+index+']').addClass('open').siblings().removeClass('open');
 	    }
 
   	});
