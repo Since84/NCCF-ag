@@ -640,15 +640,24 @@ header .logo {
   transform: skew(18deg);
 }
 /* line 227, style/sass/style.scss */
+.shop .product img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 235, style/sass/style.scss */
 .shop .product:nth-child(2n) {
   background: #c7c900;
 }
-/* line 228, style/sass/style.scss */
+/* line 236, style/sass/style.scss */
 .shop .product:nth-child(3n) {
   background: #404040;
 }
 
-/* line 233, style/sass/style.scss */
+/* line 241, style/sass/style.scss */
 div.wpcf7 {
   text-align: center;
   padding: 100px 50px;
@@ -657,12 +666,12 @@ div.wpcf7 {
   background-size: cover;
 }
 
-/* line 240, style/sass/style.scss */
+/* line 248, style/sass/style.scss */
 .wpcf7-form {
   display: inline-block;
   width: 400px;
 }
-/* line 243, style/sass/style.scss */
+/* line 251, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap {
   border: 1px solid white;
   display: flex;
@@ -671,7 +680,7 @@ div.wpcf7 {
   padding-right: 10px;
   margin-bottom: 1em;
 }
-/* line 250, style/sass/style.scss */
+/* line 258, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap:before {
   content: '';
   display: inline-block;
@@ -680,19 +689,19 @@ div.wpcf7 {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 258, style/sass/style.scss */
+/* line 266, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-name:before {
   background-image: url("style/images/icon-contacts-512.png");
 }
-/* line 261, style/sass/style.scss */
+/* line 269, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-email:before {
   background-image: url("style/images/icon-mail-512.png");
 }
-/* line 264, style/sass/style.scss */
+/* line 272, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-message:before {
   background-image: url("style/images/icon-message-512.png");
 }
-/* line 268, style/sass/style.scss */
+/* line 276, style/sass/style.scss */
 .wpcf7-form input:not([type="submit"]), .wpcf7-form textarea {
   flex: 1;
   display: inline-block;
@@ -702,7 +711,7 @@ div.wpcf7 {
   background: none;
   text-transform: uppercase;
 }
-/* line 277, style/sass/style.scss */
+/* line 285, style/sass/style.scss */
 .wpcf7-form input[type="submit"] {
   background: none;
   border: none;
@@ -711,19 +720,19 @@ div.wpcf7 {
   text-transform: uppercase;
 }
 
-/* line 286, style/sass/style.scss */
+/* line 294, style/sass/style.scss */
 .sponsors {
   background: url("style/images/sponsor-bg.jpg");
   text-align: center;
   padding: 20px;
 }
-/* line 291, style/sass/style.scss */
+/* line 299, style/sass/style.scss */
 .sponsors .sponsor img {
   width: 150px;
   height: auto;
 }
 
-/* line 298, style/sass/style.scss */
+/* line 306, style/sass/style.scss */
 footer.container {
   display: block;
   padding: 20px;
@@ -733,7 +742,7 @@ footer.container {
   color: white;
   text-transform: uppercase;
 }
-/* line 307, style/sass/style.scss */
+/* line 315, style/sass/style.scss */
 footer.container .logo {
   display: inline-block;
   vertical-align: middle;
