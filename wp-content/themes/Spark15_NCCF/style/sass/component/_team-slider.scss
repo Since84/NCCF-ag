@@ -21,11 +21,16 @@ Team Slider
 		&:hover, &.open{
 			-webkit-flex: 10; 
 			flex: 10; 
-			.slide-container .info{
-				opacity: 1;
-				bottom: 0;
-				transition-delay: 500ms;
+			.slide-container{
+				.info{
+					opacity: 1;
+					bottom: 0;
+					transition-delay: 500ms;
+				}
 			}
+		}
+		&.open .slide-container .close{
+			top: 60px;
 		}
 		.slide-container{
 			position: absolute;
@@ -36,6 +41,36 @@ Team Slider
 			transform: skew(18deg);
 			background-size: cover;
 			background-position: top left;
+
+			span.close{
+				display: inline-block;
+				vertical-align: middle;
+				font-family: "FontAwesome";
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+				border: 1px solid white;
+				border-radius: 50%;
+				position: absolute;
+				top: 0px;
+				right: 200px;
+				transition: 300ms top linear;
+				&:before{
+					content: $close;
+					font-family: "FontAwesome";
+					color: white;
+					display: inline-block;
+					font-size: 16px;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					width: 0.9em;
+					height: 1em;
+				}
+			}
 
 			.info{
 				position: absolute;
@@ -50,31 +85,7 @@ Team Slider
 				padding: 20px;
 				font-size: 16px;
 				line-height: 1.3em;
-				span.close{
-					display: inline-block;
-					vertical-align: middle;
-					font-family: "FontAwesome";
-					width: 30px;
-					height: 30px;
-					margin-right: 10px;
-					border: 1px solid;
-					border-radius: 50%;
-					position: relative;
-					&:before{
-						content: $close;
-						font-family: "FontAwesome";
-						display: inline-block;
-						font-size: 16px;
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						left: 0;
-						right: 0;
-						margin: auto;
-						width: 0.9em;
-						height: 1.3em;
-					}
-				}
+				
 				.name{
 					float:left;
 					margin-left: 50px;

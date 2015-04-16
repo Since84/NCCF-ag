@@ -225,13 +225,17 @@ Team Slider
   -webkit-flex: 10;
   flex: 10;
 }
-/* line 24, style/sass/component/_team-slider.scss */
+/* line 25, style/sass/component/_team-slider.scss */
 .team-slider .slide:hover .slide-container .info, .team-slider .slide.open .slide-container .info {
   opacity: 1;
   bottom: 0;
   transition-delay: 500ms;
 }
-/* line 30, style/sass/component/_team-slider.scss */
+/* line 32, style/sass/component/_team-slider.scss */
+.team-slider .slide.open .slide-container .close {
+  top: 60px;
+}
+/* line 35, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container {
   position: absolute;
   width: 1200px;
@@ -242,7 +246,38 @@ Team Slider
   background-size: cover;
   background-position: top left;
 }
-/* line 40, style/sass/component/_team-slider.scss */
+/* line 45, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container span.close {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "FontAwesome";
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 200px;
+  transition: 300ms top linear;
+}
+/* line 58, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container span.close:before {
+  content: "";
+  font-family: "FontAwesome";
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0.9em;
+  height: 1em;
+}
+/* line 75, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info {
   position: absolute;
   bottom: 0;
@@ -257,34 +292,7 @@ Team Slider
   font-size: 16px;
   line-height: 1.3em;
 }
-/* line 53, style/sass/component/_team-slider.scss */
-.team-slider .slide .slide-container .info span.close {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "FontAwesome";
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  border: 1px solid;
-  border-radius: 50%;
-  position: relative;
-}
-/* line 63, style/sass/component/_team-slider.scss */
-.team-slider .slide .slide-container .info span.close:before {
-  content: "";
-  font-family: "FontAwesome";
-  display: inline-block;
-  font-size: 16px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0.9em;
-  height: 1.3em;
-}
-/* line 78, style/sass/component/_team-slider.scss */
+/* line 89, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .name {
   float: left;
   margin-left: 50px;
@@ -295,22 +303,22 @@ Team Slider
   text-transform: uppercase;
   margin-top: 5px;
 }
-/* line 87, style/sass/component/_team-slider.scss */
+/* line 98, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control {
   float: left;
   margin-left: 120px;
 }
-/* line 90, style/sass/component/_team-slider.scss */
+/* line 101, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li {
   display: inline-block;
   vertical-align: middle;
   padding: 0 10px;
 }
-/* line 94, style/sass/component/_team-slider.scss */
+/* line 105, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li:not(:first-child) {
   border-left: 1px solid white;
 }
-/* line 97, style/sass/component/_team-slider.scss */
+/* line 108, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li .play {
   display: block;
   width: 25px;

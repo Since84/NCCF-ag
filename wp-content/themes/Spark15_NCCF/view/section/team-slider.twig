@@ -3,8 +3,9 @@
 	{% for member in feed %}
 	<li class="member slide">
 		<div class="slide-container" style="background-image:url({{ member.background.url }});">
+			<span class="close"></span>
 			<div class="info">
-				<span class="name"><span class="close"></span>{{ member.name }}</span>
+				<span class="name">{{ member.name }}</span>
 				<ul class="control">
 					<li>Stats</li>
 					<li>Bio</li>
