@@ -17,6 +17,7 @@
   			,'click .md-modal .md-close': 'closeVideo'
   			,'click .mobile-nav-trigger': 'toggleNav'
   			,'click .member-bio .name': 'openMember'
+  			,'click .team-slider .slide': 'openMemberHome'
   		},
 
   		initialize: function(){
@@ -42,6 +43,9 @@
 	    	var index = $member.data('index');
 
 	    	$('[data-index='+index+']').addClass('open').siblings().removeClass('open');
+	    }
+	    ,openMemberHome: function(e){
+	    	$(e.currentTarget).addClass('open').siblings().removeClass('open');
 	    }
 
   	});
