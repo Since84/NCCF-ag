@@ -155,8 +155,9 @@ header{
 		text-transform: uppercase;
 		&:before{
 			content: '';
-			background: $play-button-white;
+			background-image: $play-button-white;
 			background-size: contain;
+			background-repeat: no-repeat;
 			font-size: 50px;
 			display: block;
 			margin: auto;
