@@ -23,6 +23,7 @@ Team Accordion
 			transform: skew(18deg);
 			.member-bio{
 				width: 250px;
+				font-weight: 300;
 				.name{
 					@include header2;
 					font-family: "Lato";
@@ -40,6 +41,10 @@ Team Accordion
 
 					.label{
 						font-weight: bold;
+						margin-right: 1em;
+					}
+					li:not(.description){
+						margin-bottom: .25em;
 					}
 					.description{
 						margin-top: 1.5em;

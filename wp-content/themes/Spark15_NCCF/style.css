@@ -233,7 +233,7 @@ Team Slider
 }
 /* line 32, style/sass/component/_team-slider.scss */
 .team-slider .slide.open .slide-container .close {
-  top: 60px;
+  top: 20px;
 }
 /* line 35, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container {
@@ -257,7 +257,7 @@ Team Slider
   border: 1px solid white;
   border-radius: 50%;
   position: absolute;
-  top: 0px;
+  top: -60px;
   right: 200px;
   transition: 300ms top linear;
 }
@@ -277,7 +277,15 @@ Team Slider
   width: 0.9em;
   height: 1em;
 }
+/* line 73, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container span.close:hover {
+  border-color: #e60031;
+}
 /* line 75, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container span.close:hover:before {
+  color: #e60031;
+}
+/* line 81, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info {
   position: absolute;
   bottom: 0;
@@ -292,7 +300,7 @@ Team Slider
   font-size: 16px;
   line-height: 1.3em;
 }
-/* line 89, style/sass/component/_team-slider.scss */
+/* line 95, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .name {
   float: left;
   margin-left: 50px;
@@ -301,24 +309,23 @@ Team Slider
   font-size: 30px;
   font-family: "Lato";
   text-transform: uppercase;
-  margin-top: 5px;
 }
-/* line 98, style/sass/component/_team-slider.scss */
+/* line 102, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control {
   float: left;
   margin-left: 120px;
 }
-/* line 101, style/sass/component/_team-slider.scss */
+/* line 105, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li {
   display: inline-block;
   vertical-align: middle;
   padding: 0 10px;
 }
-/* line 105, style/sass/component/_team-slider.scss */
+/* line 109, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li:not(:first-child) {
   border-left: 1px solid white;
 }
-/* line 108, style/sass/component/_team-slider.scss */
+/* line 112, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li .play {
   display: block;
   width: 25px;
@@ -359,8 +366,9 @@ Team Accordion
 /* line 24, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio {
   width: 250px;
+  font-weight: 300;
 }
-/* line 26, style/sass/component/_team-accordion.scss */
+/* line 27, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio .name {
   font-size: 30px;
   font-family: "Lato";
@@ -369,7 +377,7 @@ Team Accordion
   font-weight: bold;
   cursor: pointer;
 }
-/* line 32, style/sass/component/_team-accordion.scss */
+/* line 33, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio .stats {
   height: 0;
   overflow: hidden;
@@ -379,47 +387,52 @@ Team Accordion
   line-height: 1.3em;
   text-transform: uppercase;
 }
-/* line 41, style/sass/component/_team-accordion.scss */
+/* line 42, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio .stats .label {
   font-weight: bold;
+  margin-right: 1em;
 }
-/* line 44, style/sass/component/_team-accordion.scss */
+/* line 46, style/sass/component/_team-accordion.scss */
+.team-accordion .bios .accordion .member-bio .stats li:not(.description) {
+  margin-bottom: .25em;
+}
+/* line 49, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio .stats .description {
   margin-top: 1.5em;
   text-transform: none;
 }
-/* line 50, style/sass/component/_team-accordion.scss */
+/* line 55, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio.open .name {
   color: #c7c900;
 }
-/* line 53, style/sass/component/_team-accordion.scss */
+/* line 58, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio.open .stats {
   height: 290px;
   margin-top: 10px;
   opacity: 1;
   transition-delay: 0 opacity;
 }
-/* line 63, style/sass/component/_team-accordion.scss */
+/* line 68, style/sass/component/_team-accordion.scss */
 .team-accordion .pics {
   position: relative;
   top: 0;
   width: 100%;
   height: 800px;
 }
-/* line 68, style/sass/component/_team-accordion.scss */
+/* line 73, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .accordion {
   display: -webkit-flex;
   flex-direction: column;
   height: 100%;
 }
-/* line 73, style/sass/component/_team-accordion.scss */
+/* line 78, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .member-pic {
   -webkit-flex: 1;
   flex: 1;
   background-size: cover;
   transition: 500ms flex linear;
 }
-/* line 78, style/sass/component/_team-accordion.scss */
+/* line 83, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .member-pic.open {
   flex: 100%;
 }
@@ -431,7 +444,7 @@ html body {
   background: black;
 }
 /* line 17, style/sass/style.scss */
-html body > * {
+html body * {
   box-sizing: border-box;
 }
 
@@ -667,17 +680,24 @@ header .logo {
   display: inline-block;
   vertical-align: top;
   height: 300px;
-  width: 240px;
+  width: 360px;
   text-align: center;
   transform: skew(-18deg);
   padding: 40px 60px;
   background: white;
 }
 /* line 224, style/sass/style.scss */
-.shop .product > * {
+.shop .product > *, .shop .product a {
   transform: skew(18deg);
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-/* line 227, style/sass/style.scss */
+/* line 234, style/sass/style.scss */
 .shop .product img {
   position: absolute;
   top: 0;
@@ -686,16 +706,16 @@ header .logo {
   right: 0;
   margin: auto;
 }
-/* line 235, style/sass/style.scss */
+/* line 242, style/sass/style.scss */
 .shop .product:nth-child(2n) {
   background: #c7c900;
 }
-/* line 236, style/sass/style.scss */
+/* line 243, style/sass/style.scss */
 .shop .product:nth-child(3n) {
   background: #404040;
 }
 
-/* line 241, style/sass/style.scss */
+/* line 248, style/sass/style.scss */
 div.wpcf7 {
   text-align: center;
   padding: 100px 50px;
@@ -704,12 +724,12 @@ div.wpcf7 {
   background-size: cover;
 }
 
-/* line 248, style/sass/style.scss */
+/* line 255, style/sass/style.scss */
 .wpcf7-form {
   display: inline-block;
   width: 400px;
 }
-/* line 251, style/sass/style.scss */
+/* line 258, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap {
   border: 1px solid white;
   display: flex;
@@ -718,7 +738,7 @@ div.wpcf7 {
   padding-right: 10px;
   margin-bottom: 1em;
 }
-/* line 258, style/sass/style.scss */
+/* line 265, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap:before {
   content: '';
   display: inline-block;
@@ -727,19 +747,20 @@ div.wpcf7 {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 266, style/sass/style.scss */
+/* line 273, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-name:before {
   background-image: url("style/images/icon-contacts-512.png");
 }
-/* line 269, style/sass/style.scss */
+/* line 276, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-email:before {
   background-image: url("style/images/icon-mail-512.png");
 }
-/* line 272, style/sass/style.scss */
+/* line 279, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-message:before {
   background-image: url("style/images/icon-message-512.png");
+  height: 1.5em;
 }
-/* line 276, style/sass/style.scss */
+/* line 284, style/sass/style.scss */
 .wpcf7-form input:not([type="submit"]), .wpcf7-form textarea {
   flex: 1;
   display: inline-block;
@@ -748,29 +769,32 @@ div.wpcf7 {
   width: 100%;
   background: none;
   text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 15px;
 }
-/* line 285, style/sass/style.scss */
+/* line 295, style/sass/style.scss */
 .wpcf7-form input[type="submit"] {
   background: none;
   border: none;
   border-bottom: 1px solid white;
   color: white;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
-/* line 294, style/sass/style.scss */
+/* line 305, style/sass/style.scss */
 .sponsors {
   background: url("style/images/sponsor-bg.jpg");
   text-align: center;
   padding: 20px;
 }
-/* line 299, style/sass/style.scss */
+/* line 310, style/sass/style.scss */
 .sponsors .sponsor img {
   width: 150px;
   height: auto;
 }
 
-/* line 306, style/sass/style.scss */
+/* line 317, style/sass/style.scss */
 footer.container {
   display: block;
   padding: 20px;
@@ -780,7 +804,7 @@ footer.container {
   color: white;
   text-transform: uppercase;
 }
-/* line 315, style/sass/style.scss */
+/* line 326, style/sass/style.scss */
 footer.container .logo {
   display: inline-block;
   vertical-align: middle;

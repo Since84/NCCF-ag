@@ -30,7 +30,7 @@ Team Slider
 			}
 		}
 		&.open .slide-container .close{
-			top: 60px;
+			top: 20px;
 		}
 		.slide-container{
 			position: absolute;
@@ -52,7 +52,7 @@ Team Slider
 				border: 1px solid white;
 				border-radius: 50%;
 				position: absolute;
-				top: 0px;
+				top: -60px;
 				right: 200px;
 				transition: 300ms top linear;
 				&:before{
@@ -69,6 +69,12 @@ Team Slider
 					margin: auto;
 					width: 0.9em;
 					height: 1em;
+				}
+				&:hover{
+					border-color: $red;
+					&:before{
+						color: $red;
+					}
 				}
 			}
 
@@ -89,11 +95,9 @@ Team Slider
 				.name{
 					float:left;
 					margin-left: 50px;
-
 					width: 400px;
 					text-align: left;
 					@include header2;
-					margin-top: 5px;
 				}
 				.control{
 					float: left;
