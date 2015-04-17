@@ -26,7 +26,7 @@ Team Accordion
 				font-weight: 300;
 				.name{
 					@include header2;
-					font-family: "Lato";
+					font-family: "Fjalla One";
 					font-weight: bold;
 					cursor: pointer;
 				}
@@ -34,7 +34,7 @@ Team Accordion
 					height: 0;
 					overflow: hidden;
 					font-size: 14px;
-					transition: 500ms height ease-out 0, 0ms margin-top ease-out 450ms, 200ms opacity linear 550ms;
+					transition: 500ms height ease-out 0ms, 0ms margin-top ease-out 450ms, 200ms opacity linear 550ms;
 					opacity: 0;
 					line-height: 1.3em;
 					text-transform: uppercase;
