@@ -4,13 +4,6 @@ get_header();
 $context 	= Timber::get_context();
 $post		= new TimberPost();
 
-// Header 
-$headerContext 	= array(
-	"logo"		=>	get_header_image()
-	,"nav"		=>	new TimberMenu( "main-nav" )
-);
-$context["header"] = Timber::compile("view/section/header.twig", $headerContext);
-
 // Team Accordion 
 $teamPost = new TimberPost("Team");
 $teamFeedContext = array( 
