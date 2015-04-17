@@ -10,7 +10,7 @@ Template: Spark15
 
 //Base
 html body{
-	font-family: 'Lato';
+	font-family: 'Roboto';
 	font-size: 16px;
 	background: $black;
 
@@ -38,6 +38,9 @@ a{
 
 
 //Header
+.header.container{
+	z-index: 10;
+}
 header{
 	height: 90px;
 	width: 100%;

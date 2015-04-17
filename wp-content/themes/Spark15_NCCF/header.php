@@ -22,15 +22,5 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
-	<div class="container">
-	<?php
-	// Header 
-	$context  = Timber::get_context();
-	$headerContext 	= array(
-		"logo"		=>	get_header_image()
-		,"nav"		=>	new TimberMenu( "main-nav" )
-	);
-	$headerContext = array_merge($headerContext, $context);
-	Timber::render("view/section/header.twig", $headerContext);
-	?>
-	</div>
+
+

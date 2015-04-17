@@ -439,7 +439,7 @@ Team Accordion
 
 /* line 12, style/sass/style.scss */
 html body {
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-size: 16px;
   background: black;
 }
@@ -469,6 +469,11 @@ a:hover {
 }
 
 /* line 41, style/sass/style.scss */
+.header.container {
+  z-index: 10;
+}
+
+/* line 44, style/sass/style.scss */
 header {
   height: 90px;
   width: 100%;
@@ -476,7 +481,7 @@ header {
   position: relative;
   z-index: 2000;
 }
-/* line 47, style/sass/style.scss */
+/* line 50, style/sass/style.scss */
 header .logo {
   position: absolute;
   display: block;
@@ -486,7 +491,7 @@ header .logo {
   margin: auto;
 }
 
-/* line 56, style/sass/style.scss */
+/* line 59, style/sass/style.scss */
 .mobile-nav-trigger {
   position: absolute;
   display: block;
@@ -497,28 +502,28 @@ header .logo {
   height: 1em;
   transition: 300ms right ease-in-out;
 }
-/* line 65, style/sass/style.scss */
+/* line 68, style/sass/style.scss */
 .mobile-nav-trigger:before {
   content: "";
   font-family: "FontAwesome";
   font-size: 26px;
   color: white;
 }
-/* line 71, style/sass/style.scss */
+/* line 74, style/sass/style.scss */
 .mobile-nav-trigger:hover:before {
   color: #c7c900;
 }
-/* line 74, style/sass/style.scss */
+/* line 77, style/sass/style.scss */
 .nav-open .mobile-nav-trigger {
   right: 150px;
   transition-delay: 170ms;
 }
-/* line 77, style/sass/style.scss */
+/* line 80, style/sass/style.scss */
 .nav-open .mobile-nav-trigger:before {
   color: #c7c900;
 }
 
-/* line 82, style/sass/style.scss */
+/* line 85, style/sass/style.scss */
 .mobile-nav {
   position: absolute;
   width: 200px;
@@ -529,21 +534,21 @@ header .logo {
   transition: right 500ms ease-in-out;
   z-index: 2000;
 }
-/* line 91, style/sass/style.scss */
+/* line 94, style/sass/style.scss */
 .mobile-nav li {
   padding: 20px;
 }
-/* line 94, style/sass/style.scss */
+/* line 97, style/sass/style.scss */
 .nav-open .mobile-nav {
   right: 0;
 }
 
-/* line 100, style/sass/style.scss */
+/* line 103, style/sass/style.scss */
 .team-slider {
   position: relative;
   overflow: hidden;
 }
-/* line 103, style/sass/style.scss */
+/* line 106, style/sass/style.scss */
 .team-slider:before {
   content: "#TeamNC2015";
   display: block;
@@ -562,24 +567,24 @@ header .logo {
   opacity: 1;
   transition: 500ms all ease-in-out;
 }
-/* line 119, style/sass/style.scss */
+/* line 122, style/sass/style.scss */
 .team-slider:hover:before {
   top: -1000px;
   opacity: 0;
 }
 
-/* line 126, style/sass/style.scss */
+/* line 129, style/sass/style.scss */
 .updates {
   background: #1c1c1c;
   display: block;
   padding: 25px;
   text-align: center;
 }
-/* line 131, style/sass/style.scss */
+/* line 134, style/sass/style.scss */
 .updates li {
   display: inline-block;
 }
-/* line 133, style/sass/style.scss */
+/* line 136, style/sass/style.scss */
 .updates li a {
   display: block;
   border: 1px solid #404040;
@@ -587,28 +592,28 @@ header .logo {
   width: 450px;
   font-weight: 300;
 }
-/* line 139, style/sass/style.scss */
+/* line 142, style/sass/style.scss */
 .updates li a strong {
   font-weight: bold;
 }
-/* line 142, style/sass/style.scss */
+/* line 145, style/sass/style.scss */
 .updates li a:first-child {
   margin-right: 25px;
 }
 
-/* line 148, style/sass/style.scss */
+/* line 151, style/sass/style.scss */
 .video-block {
   background: url("style/images/video-bg.jpg");
   text-align: center;
   padding: 100px;
 }
-/* line 152, style/sass/style.scss */
+/* line 155, style/sass/style.scss */
 .video-block span {
   position: relative;
   color: white;
   text-transform: uppercase;
 }
-/* line 156, style/sass/style.scss */
+/* line 159, style/sass/style.scss */
 .video-block span:before {
   content: '';
   background-image: url("style/images/play_button_white.png");
@@ -621,12 +626,12 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-/* line 168, style/sass/style.scss */
+/* line 171, style/sass/style.scss */
 .video-block span:hover:before {
   background-image: url("style/images/play_button_yellow.png");
 }
 
-/* line 173, style/sass/style.scss */
+/* line 176, style/sass/style.scss */
 .videos {
   background: url("style/images/video-pattern.jpg");
   background-size: cover;
@@ -635,16 +640,16 @@ header .logo {
   width: 100%;
   text-align: center;
 }
-/* line 180, style/sass/style.scss */
+/* line 183, style/sass/style.scss */
 .videos .video {
   flex: 1;
   position: relative;
 }
-/* line 183, style/sass/style.scss */
+/* line 186, style/sass/style.scss */
 .videos .video img {
   width: 260px;
 }
-/* line 185, style/sass/style.scss */
+/* line 188, style/sass/style.scss */
 .videos .video .thumb:before {
   content: '';
   background: url("style/images/play_button_red.png");
@@ -660,12 +665,12 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-/* line 200, style/sass/style.scss */
+/* line 203, style/sass/style.scss */
 .videos .video .thumb:hover:before {
   background-image: url("style/images/play_button_white.png");
 }
 
-/* line 207, style/sass/style.scss */
+/* line 210, style/sass/style.scss */
 .shop {
   position: relative;
   background-size: cover;
@@ -675,7 +680,7 @@ header .logo {
   overflow: hidden;
   text-indent: -50px;
 }
-/* line 215, style/sass/style.scss */
+/* line 218, style/sass/style.scss */
 .shop .product {
   display: inline-block;
   vertical-align: top;
@@ -686,7 +691,7 @@ header .logo {
   padding: 40px 60px;
   background: white;
 }
-/* line 224, style/sass/style.scss */
+/* line 227, style/sass/style.scss */
 .shop .product > *, .shop .product a {
   transform: skew(18deg);
   display: block;
@@ -697,7 +702,7 @@ header .logo {
   right: 0;
   margin: auto;
 }
-/* line 234, style/sass/style.scss */
+/* line 237, style/sass/style.scss */
 .shop .product img {
   position: absolute;
   top: 0;
@@ -706,16 +711,16 @@ header .logo {
   right: 0;
   margin: auto;
 }
-/* line 242, style/sass/style.scss */
+/* line 245, style/sass/style.scss */
 .shop .product:nth-child(2n) {
   background: #c7c900;
 }
-/* line 243, style/sass/style.scss */
+/* line 246, style/sass/style.scss */
 .shop .product:nth-child(3n) {
   background: #404040;
 }
 
-/* line 248, style/sass/style.scss */
+/* line 251, style/sass/style.scss */
 div.wpcf7 {
   text-align: center;
   padding: 100px 50px;
@@ -724,12 +729,12 @@ div.wpcf7 {
   background-size: cover;
 }
 
-/* line 255, style/sass/style.scss */
+/* line 258, style/sass/style.scss */
 .wpcf7-form {
   display: inline-block;
   width: 400px;
 }
-/* line 258, style/sass/style.scss */
+/* line 261, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap {
   border: 1px solid white;
   display: flex;
@@ -738,7 +743,7 @@ div.wpcf7 {
   padding-right: 10px;
   margin-bottom: 1em;
 }
-/* line 265, style/sass/style.scss */
+/* line 268, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap:before {
   content: '';
   display: inline-block;
@@ -747,20 +752,20 @@ div.wpcf7 {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 273, style/sass/style.scss */
+/* line 276, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-name:before {
   background-image: url("style/images/icon-contacts-512.png");
 }
-/* line 276, style/sass/style.scss */
+/* line 279, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-email:before {
   background-image: url("style/images/icon-mail-512.png");
 }
-/* line 279, style/sass/style.scss */
+/* line 282, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-message:before {
   background-image: url("style/images/icon-message-512.png");
   height: 1.5em;
 }
-/* line 284, style/sass/style.scss */
+/* line 287, style/sass/style.scss */
 .wpcf7-form input:not([type="submit"]), .wpcf7-form textarea {
   flex: 1;
   display: inline-block;
@@ -772,7 +777,7 @@ div.wpcf7 {
   font-size: 16px;
   margin-left: 15px;
 }
-/* line 295, style/sass/style.scss */
+/* line 298, style/sass/style.scss */
 .wpcf7-form input[type="submit"] {
   background: none;
   border: none;
@@ -782,19 +787,19 @@ div.wpcf7 {
   font-size: 16px;
 }
 
-/* line 305, style/sass/style.scss */
+/* line 308, style/sass/style.scss */
 .sponsors {
   background: url("style/images/sponsor-bg.jpg");
   text-align: center;
   padding: 20px;
 }
-/* line 310, style/sass/style.scss */
+/* line 313, style/sass/style.scss */
 .sponsors .sponsor img {
   width: 150px;
   height: auto;
 }
 
-/* line 317, style/sass/style.scss */
+/* line 320, style/sass/style.scss */
 footer.container {
   display: block;
   padding: 20px;
@@ -804,7 +809,7 @@ footer.container {
   color: white;
   text-transform: uppercase;
 }
-/* line 326, style/sass/style.scss */
+/* line 329, style/sass/style.scss */
 footer.container .logo {
   display: inline-block;
   vertical-align: middle;
