@@ -503,6 +503,18 @@ a:hover {
 }
 
 /* line 32, style/sass/style.scss */
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: cover;
+  opacity: .2;
+}
+
+/* line 43, style/sass/style.scss */
 .container {
   width: 1200px;
   display: block;
@@ -511,12 +523,12 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 42, style/sass/style.scss */
+/* line 53, style/sass/style.scss */
 .header.container {
   z-index: 10;
 }
 
-/* line 45, style/sass/style.scss */
+/* line 56, style/sass/style.scss */
 header {
   height: 90px;
   width: 100%;
@@ -524,7 +536,7 @@ header {
   position: relative;
   z-index: 2000;
 }
-/* line 51, style/sass/style.scss */
+/* line 62, style/sass/style.scss */
 header .logo {
   position: absolute;
   display: block;
@@ -534,7 +546,7 @@ header .logo {
   margin: auto;
 }
 
-/* line 60, style/sass/style.scss */
+/* line 71, style/sass/style.scss */
 .mobile-nav-trigger {
   position: absolute;
   display: block;
@@ -545,28 +557,28 @@ header .logo {
   height: 1em;
   transition: 300ms right ease-in-out;
 }
-/* line 69, style/sass/style.scss */
+/* line 80, style/sass/style.scss */
 .mobile-nav-trigger:before {
   content: "";
   font-family: "FontAwesome";
   font-size: 26px;
   color: white;
 }
-/* line 75, style/sass/style.scss */
+/* line 86, style/sass/style.scss */
 .mobile-nav-trigger:hover:before {
   color: #c7c900;
 }
-/* line 78, style/sass/style.scss */
+/* line 89, style/sass/style.scss */
 .nav-open .mobile-nav-trigger {
   right: 150px;
   transition-delay: 170ms;
 }
-/* line 81, style/sass/style.scss */
+/* line 92, style/sass/style.scss */
 .nav-open .mobile-nav-trigger:before {
   color: #c7c900;
 }
 
-/* line 86, style/sass/style.scss */
+/* line 97, style/sass/style.scss */
 .mobile-nav {
   position: absolute;
   width: 200px;
@@ -577,21 +589,21 @@ header .logo {
   transition: right 500ms ease-in-out;
   z-index: 2000;
 }
-/* line 95, style/sass/style.scss */
+/* line 106, style/sass/style.scss */
 .mobile-nav li {
   padding: 20px;
 }
-/* line 98, style/sass/style.scss */
+/* line 109, style/sass/style.scss */
 .nav-open .mobile-nav {
   right: 0;
 }
 
-/* line 104, style/sass/style.scss */
+/* line 115, style/sass/style.scss */
 .team-slider {
   position: relative;
   overflow: hidden;
 }
-/* line 107, style/sass/style.scss */
+/* line 118, style/sass/style.scss */
 .team-slider:before {
   content: "#TeamNC2015";
   display: block;
@@ -610,24 +622,24 @@ header .logo {
   opacity: 1;
   transition: 500ms all ease-in-out;
 }
-/* line 123, style/sass/style.scss */
+/* line 134, style/sass/style.scss */
 .team-slider:hover:before {
   top: -1000px;
   opacity: 0;
 }
 
-/* line 130, style/sass/style.scss */
+/* line 141, style/sass/style.scss */
 .updates {
   background: #1c1c1c;
   display: block;
   padding: 25px;
   text-align: center;
 }
-/* line 135, style/sass/style.scss */
+/* line 146, style/sass/style.scss */
 .updates li {
   display: inline-block;
 }
-/* line 137, style/sass/style.scss */
+/* line 148, style/sass/style.scss */
 .updates li a {
   display: block;
   border: 1px solid #404040;
@@ -635,28 +647,28 @@ header .logo {
   width: 450px;
   font-weight: 300;
 }
-/* line 143, style/sass/style.scss */
+/* line 154, style/sass/style.scss */
 .updates li a strong {
   font-weight: bold;
 }
-/* line 146, style/sass/style.scss */
+/* line 157, style/sass/style.scss */
 .updates li a:first-child {
   margin-right: 25px;
 }
 
-/* line 152, style/sass/style.scss */
+/* line 163, style/sass/style.scss */
 .video-block {
   background: url("style/images/video-bg.jpg");
   text-align: center;
   padding: 100px;
 }
-/* line 156, style/sass/style.scss */
+/* line 167, style/sass/style.scss */
 .video-block span {
   position: relative;
   color: white;
   text-transform: uppercase;
 }
-/* line 160, style/sass/style.scss */
+/* line 171, style/sass/style.scss */
 .video-block span:before {
   content: '';
   background-image: url("style/images/play_button_white.png");
@@ -669,12 +681,12 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-/* line 172, style/sass/style.scss */
+/* line 183, style/sass/style.scss */
 .video-block span:hover:before {
   background-image: url("style/images/play_button_yellow.png");
 }
 
-/* line 177, style/sass/style.scss */
+/* line 188, style/sass/style.scss */
 .videos {
   background: url("style/images/video-pattern.jpg");
   background-size: cover;
@@ -683,16 +695,16 @@ header .logo {
   width: 100%;
   text-align: center;
 }
-/* line 184, style/sass/style.scss */
+/* line 195, style/sass/style.scss */
 .videos .video {
   flex: 1;
   position: relative;
 }
-/* line 187, style/sass/style.scss */
+/* line 198, style/sass/style.scss */
 .videos .video img {
   width: 260px;
 }
-/* line 189, style/sass/style.scss */
+/* line 200, style/sass/style.scss */
 .videos .video .thumb:before {
   content: '';
   background: url("style/images/play_button_red.png");
@@ -708,12 +720,12 @@ header .logo {
   width: 50px;
   height: 50px;
 }
-/* line 204, style/sass/style.scss */
+/* line 215, style/sass/style.scss */
 .videos .video .thumb:hover:before {
   background-image: url("style/images/play_button_white.png");
 }
 
-/* line 211, style/sass/style.scss */
+/* line 222, style/sass/style.scss */
 .shop {
   position: relative;
   background-size: cover;
@@ -723,7 +735,7 @@ header .logo {
   overflow: hidden;
   text-indent: -50px;
 }
-/* line 219, style/sass/style.scss */
+/* line 230, style/sass/style.scss */
 .shop .product {
   display: inline-block;
   vertical-align: top;
@@ -734,7 +746,7 @@ header .logo {
   padding: 40px 60px;
   background: white;
 }
-/* line 228, style/sass/style.scss */
+/* line 239, style/sass/style.scss */
 .shop .product > *, .shop .product a {
   transform: skew(18deg);
   display: block;
@@ -745,7 +757,7 @@ header .logo {
   right: 0;
   margin: auto;
 }
-/* line 238, style/sass/style.scss */
+/* line 249, style/sass/style.scss */
 .shop .product img {
   position: absolute;
   top: 0;
@@ -754,30 +766,43 @@ header .logo {
   right: 0;
   margin: auto;
 }
-/* line 246, style/sass/style.scss */
+/* line 257, style/sass/style.scss */
 .shop .product:nth-child(2n) {
   background: #c7c900;
 }
-/* line 247, style/sass/style.scss */
+/* line 258, style/sass/style.scss */
 .shop .product:nth-child(3n) {
   background: #404040;
 }
 
-/* line 252, style/sass/style.scss */
+/* line 263, style/sass/style.scss */
 div.wpcf7 {
   text-align: center;
   padding: 100px 50px;
   display: block;
-  background: url("style/images/contact-bg.jpg");
+  position: relative;
+}
+/* line 268, style/sass/style.scss */
+div.wpcf7:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url("style/images/team-norcal3.jpg");
   background-size: cover;
+  opacity: .2;
 }
 
-/* line 259, style/sass/style.scss */
+/* line 281, style/sass/style.scss */
 .wpcf7-form {
+  position: relative;
   display: inline-block;
   width: 400px;
 }
-/* line 262, style/sass/style.scss */
+/* line 285, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap {
   border: 1px solid white;
   display: flex;
@@ -786,7 +811,7 @@ div.wpcf7 {
   padding-right: 10px;
   margin-bottom: 1em;
 }
-/* line 269, style/sass/style.scss */
+/* line 292, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap:before {
   content: '';
   display: inline-block;
@@ -795,20 +820,20 @@ div.wpcf7 {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 277, style/sass/style.scss */
+/* line 300, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-name:before {
   background-image: url("style/images/icon-contacts-512.png");
 }
-/* line 280, style/sass/style.scss */
+/* line 303, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-email:before {
   background-image: url("style/images/icon-mail-512.png");
 }
-/* line 283, style/sass/style.scss */
+/* line 306, style/sass/style.scss */
 .wpcf7-form .wpcf7-form-control-wrap.your-message:before {
   background-image: url("style/images/icon-message-512.png");
   height: 1.5em;
 }
-/* line 288, style/sass/style.scss */
+/* line 311, style/sass/style.scss */
 .wpcf7-form input:not([type="submit"]), .wpcf7-form textarea {
   flex: 1;
   display: inline-block;
@@ -820,7 +845,7 @@ div.wpcf7 {
   font-size: 16px;
   margin-left: 15px;
 }
-/* line 299, style/sass/style.scss */
+/* line 322, style/sass/style.scss */
 .wpcf7-form input[type="submit"] {
   background: none;
   border: none;
@@ -830,13 +855,13 @@ div.wpcf7 {
   font-size: 16px;
 }
 
-/* line 309, style/sass/style.scss */
+/* line 332, style/sass/style.scss */
 .sponsors {
   background: url("style/images/sponsor-bg.jpg");
   text-align: center;
   padding: 20px;
 }
-/* line 314, style/sass/style.scss */
+/* line 337, style/sass/style.scss */
 .sponsors .sponsor img {
   width: 150px;
   height: auto;
@@ -1027,7 +1052,7 @@ Blog
   vertical-align: middle;
 }
 
-/* line 323, style/sass/style.scss */
+/* line 346, style/sass/style.scss */
 footer.container {
   display: block;
   padding: 20px;
@@ -1037,7 +1062,7 @@ footer.container {
   color: white;
   text-transform: uppercase;
 }
-/* line 332, style/sass/style.scss */
+/* line 355, style/sass/style.scss */
 footer.container .logo {
   display: inline-block;
   vertical-align: middle;

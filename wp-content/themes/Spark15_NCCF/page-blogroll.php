@@ -17,6 +17,7 @@ $blogArgs = array(
 	'post_type'	=> 'post'
 );
 $blogPosts = Timber::get_posts($blogArgs);
+$context['post'] = $post;
 
 $blogListContext = array( 
 	"header"		=> "Blog"
