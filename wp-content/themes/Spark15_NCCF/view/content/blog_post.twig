@@ -1,0 +1,20 @@
+<div class="blog-post">
+	<div class="header-bar">
+		<div class="social">
+			<a class="facebook" href="http://www.facebook.com/sharer/sharer.php?u={{ post.permalink }}&title={{ post.post_title }}"></a>
+			<a class="twitter" href="http://twitter.com/intent/tweet?status={{ post.post_title }}+{{ post.permalink }}"></a>
+			<a class="gplus" href="https://plus.google.com/share?url={{ post.permalink }}"></a>
+		</div>
+		<span class="date">{{ post.post_date|date("m.d.Y") }}</span>
+		<span class="comments">{{ post.comment_count }} Comments</span>
+	</div>
+	<div class="post">
+		<a class="thumb" href="{{ post.permalink }}"> 
+			<img src="{{ post.thumbnail.src }}"/>
+		</a>
+		<div class="post-content">
+			<h2 class="post-title"><a href="{{ post.permalink }}">{{ post.post_title }}</a></h2>
+			<div class="post-text"><a href="{{ post.permalink }}">{{ post.content }}</a></div>
+		</div>
+	</div>
+</div>

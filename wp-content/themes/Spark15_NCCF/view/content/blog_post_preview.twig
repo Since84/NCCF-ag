@@ -1,0 +1,20 @@
+<li class="blog-post-preview">
+	<div class="header-bar">
+		<div class="social">
+			<a class="facebook" href="http://www.facebook.com/sharer/sharer.php?u={{ slide.permalink }}&title={{ slide.post_title }}"></a>
+			<a class="twitter" href="http://twitter.com/intent/tweet?status={{ slide.post_title }}+{{ slide.permalink }}"></a>
+			<a class="gplus" href="https://plus.google.com/share?url={{ slide.permalink }}"></a>
+		</div>
+		<span class="date">{{ slide.post_date|date("m.d.Y") }}</span>
+		<span class="comments"></span>
+	</div>
+	<div class="post">
+		<a class="thumb" href="{{ slide.permalink }}"> 
+			<img src="{{ slide.thumbnail.src }}"/>
+		</a>
+		<div class="post-content">
+			<h2 class="post-title"><a href="{{ slide.permalink }}">{{ slide.post_title }}</a></h2>
+			<div class="post-text"><a href="{{ slide.permalink }}">{{ slide.get_preview(40,"",false) }}</a></div>
+		</div>
+	</div>
+</li>

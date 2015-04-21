@@ -1,0 +1,137 @@
+/*
+
+Blog
+
+*/
+.blogroll {
+	display: flex;
+}
+.blog-list{
+	display: inline-block;
+	width: 370px;
+	padding: 0 40px;
+	h2 { 
+		@include header2; 
+		margin-bottom: 30px;
+	}
+	li{
+		margin-bottom: 1em;
+		.date{
+			font-weight: bold;
+		}
+	}
+}
+
+.blog, .single {
+	flex: 1;
+	.header-bar{
+		display: block;
+		background: $yellow;
+		color: black;
+		padding: 10px 20px;
+		transform: skew(-18deg);
+		margin-bottom: 1em;
+		width: 105%;
+		margin-left: 8px;
+
+		& > * { 
+			transform: skew(18deg); 
+			display: block;
+		}
+
+		@include header2;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 22px;
+
+		.social{
+			display: inline-block;
+			width: 340px;
+			a{
+				display: inline-block;
+				margin-right: 10px;
+				&:before{
+					font-size: 20px;
+				}
+			}
+		}
+		.date{
+			display: inline-block;
+		}
+	}
+	.blog-post-preview, .blog-post{
+		margin-bottom: 60px;
+		.post{
+			display: flex;
+		}
+		.social{
+			a{
+				display: inline-block;
+				vertical-align: middle;
+				&:before{
+					font-family: "FontAwesome";
+					color: black;
+					font-size: 16px;
+
+				}
+				&.facebook:before{ content: $facebook; }
+				&.twitter:before{ content: $twitter; }
+				&.gplus:before{ content: $gplus; }
+			}
+		}
+		.thumb{
+			display: inline-block;
+			width: 340px;
+			height: 225px;
+			overflow: hidden;
+			margin-right: 30px; 
+			img{
+				max-width: 100%;
+				max-height: 100%;
+				min-width: 100%;
+				min-height: 100%;
+			}
+		}
+		.post-content{
+			flex: 1;
+			.post-text a:hover{
+				color: white;
+			}
+		}
+		.post-title{
+			@include header2;
+			margin-bottom: 25px;
+		}
+		.post-text{
+			line-height: 1.6em;
+		}
+	}
+	.blog-post{
+		flex: 1;
+		display: block;
+		width: 100%;
+		.post{
+			display: block;
+		}
+		.thumb{
+			width: 100%;
+			height: auto;
+			margin-bottom: 1em;
+			img { height: auto; }
+		}
+		.post-content{
+			flex: none;
+		}
+		.date{
+			margin-right: 40px;
+		}
+		.comments{
+			font-family: "Roboto";
+			font-weight: normal;
+			font-size: 14px;
+			display: inline-block;
+			margin-left: 20%;
+			vertical-align: middle;
+		}
+	}
+}

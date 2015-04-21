@@ -21,6 +21,7 @@
 		<ul class="accordion">
 		{% for member in feed %}
 		<li class="member-pic slide" data-index="{{ loop.index }}" style="background-image:url({{ member.background.url }});">
+			<span class="closed background" style="background-image:url({{ member.preview_bar.url }})"></span>
 		{% endfor %}
 		</ul>
 	</div>
