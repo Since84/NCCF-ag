@@ -427,43 +427,47 @@ Team Accordion
   margin-right: 1em;
 }
 /* line 51, style/sass/component/_team-accordion.scss */
-.team-accordion .bios .accordion .member-bio .stats li:not(.description) {
+.team-accordion .bios .accordion .member-bio .stats li {
   margin-bottom: .25em;
 }
-/* line 54, style/sass/component/_team-accordion.scss */
-.team-accordion .bios .accordion .member-bio .stats .description {
+/* line 55, style/sass/component/_team-accordion.scss */
+.team-accordion .bios .accordion .member-bio .description {
   margin-top: 1.5em;
   text-transform: none;
 }
-/* line 59, style/sass/component/_team-accordion.scss */
+/* line 58, style/sass/component/_team-accordion.scss */
+.team-accordion .bios .accordion .member-bio .description p {
+  line-height: 1.5em;
+}
+/* line 62, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio.open {
   margin-bottom: 40px;
 }
-/* line 61, style/sass/component/_team-accordion.scss */
+/* line 64, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio.open .name {
   color: #c7c900;
 }
-/* line 64, style/sass/component/_team-accordion.scss */
+/* line 67, style/sass/component/_team-accordion.scss */
 .team-accordion .bios .accordion .member-bio.open .info {
   max-height: 290px;
   margin-top: 10px;
   opacity: 1;
   transition-delay: 0 opacity;
 }
-/* line 74, style/sass/component/_team-accordion.scss */
+/* line 77, style/sass/component/_team-accordion.scss */
 .team-accordion .pics {
   position: relative;
   top: 0;
   width: 100%;
   height: 800px;
 }
-/* line 79, style/sass/component/_team-accordion.scss */
+/* line 82, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .accordion {
   display: -webkit-flex;
   flex-direction: column;
   height: 100%;
 }
-/* line 84, style/sass/component/_team-accordion.scss */
+/* line 87, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .member-pic {
   -webkit-flex: 1;
   flex: 1;
@@ -471,7 +475,7 @@ Team Accordion
   transition: 500ms flex linear;
   position: relative;
 }
-/* line 91, style/sass/component/_team-accordion.scss */
+/* line 94, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .member-pic .closed.background {
   display: block;
   position: absolute;
@@ -483,11 +487,11 @@ Team Accordion
   transition: .5s opacity linear;
   background-size: cover;
 }
-/* line 102, style/sass/component/_team-accordion.scss */
+/* line 105, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .member-pic.open {
   flex: 100%;
 }
-/* line 104, style/sass/component/_team-accordion.scss */
+/* line 107, style/sass/component/_team-accordion.scss */
 .team-accordion .pics .member-pic.open .closed.background {
   opacity: 0;
 }

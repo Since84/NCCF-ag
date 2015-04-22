@@ -48,12 +48,15 @@ Team Accordion
 						font-weight: bold;
 						margin-right: 1em;
 					}
-					li:not(.description){
+					li{
 						margin-bottom: .25em;
 					}
-					.description{
-						margin-top: 1.5em;
-						text-transform: none;
+				}
+				.description{
+					margin-top: 1.5em;
+					text-transform: none;
+					p{
+						line-height: 1.5em;
 					}
 				}
 				&.open{
