@@ -64,11 +64,10 @@ Team Slider
 				font-family: "FontAwesome";
 				width: 30px;
 				height: 30px;
-				margin-right: 10px;
 				border-radius: 50%;
 				position: absolute;
 				top: -60px;
-				right: 200px;
+				right: 260px;
 				transition: 300ms top linear;
 				&:before{
 					content: $close;
