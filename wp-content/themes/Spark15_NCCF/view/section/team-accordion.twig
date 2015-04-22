@@ -9,7 +9,7 @@
 				<div class="info">
 					<ul class="stats">
 						{%  for stat in member.statistics %}
-						<li class="stat"><span class="label">Height: </span> 6'1</li>				
+						<li class="stat"><span class="label">{{ stat.label }} </span> {{ stat.value }}</li>				
 						{% endfor %}
 					</ul>
 					<div class="description">{{ member.bio }}</div>

@@ -32,12 +32,15 @@ Team Accordion
 					font-weight: bold;
 					cursor: pointer;
 				}
-				.stats{
+				.info{
 					max-height: 0;
-					overflow: hidden;
-					font-size: 14px;
+					overflow: hidden;	
 					transition: 500ms max-height ease-out 0ms, 0ms margin-top ease-out 450ms, 200ms opacity linear 550ms;
-					opacity: 0;
+					opacity: 0;				
+				}
+				.stats{
+
+					font-size: 14px;
 					line-height: 1.3em;
 					text-transform: uppercase;
 
@@ -58,7 +61,7 @@ Team Accordion
 					.name{
 						color: $yellow;
 					}
-					.stats{
+					.info{
 						max-height: 290px;
 						margin-top: 10px;
 						opacity: 1;
