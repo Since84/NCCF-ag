@@ -20,6 +20,7 @@
   			,'click .member-bio .name': 'openMember'
   			,'click .team-slider .slide:not(.open)': 'openMemberHome'
   			,'click .team-slider .close': 'closeMemberHome'
+  			,'click .team-slider .info .stats-bio': 'toggleInfo'
   		},
 
   		initialize: function(){
@@ -54,6 +55,9 @@
 	    }
 	    ,closeMemberHome: function(e){
 	    	$(e.currentTarget).parents('.open').removeClass('open');
+	    }
+	    ,toggleInfo: function(e){
+	    	$(e.currentTarget).parents('.info').toggleClass('open');
 	    }
 
   	});

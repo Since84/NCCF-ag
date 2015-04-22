@@ -7,10 +7,28 @@
 			<div class="info">
 				<span class="name">{{ member.name }}</span>
 				<ul class="control">
-					<li>Stats</li>
-					<li>Bio</li>
-					<li><span class="play"></span></li>
+					<li class="stats-bio">Stats & Bio</li>
+					<li>
+						{# <span class="play video_trigger"></span> #}
+						<div class="md-modal md-effect-13" id="modal-13">
+							<div class="md-content">
+								{% if slide.service == "YouTube" %}
+									<iframe width="800" height="600" data-src="https://www.youtube.com/embed/{{ member.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+								{% endif %}				
+								<button class="md-close"></button>
+							</div>
+						</div>
+						<div class="md-overlay"></div>
+					</li>
 				</ul>
+				<div class="bio">
+					<ul class="stats">
+						{%  for stat in member.statistics %}
+						<li class="stat"><span class="label">{{ stat.label }}:</span> {{ stat.value }}</li>				
+						{% endfor %}
+					</ul>
+					<div class="description">{{ member.bio }}</div>
+				</div>
 			</div>
 		</div>
 		<div class="background closed" style="background-image:url({{ member.home_closed.url }});"></div>

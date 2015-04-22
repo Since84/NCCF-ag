@@ -283,12 +283,13 @@ Team Slider
   opacity: 1;
   bottom: 0;
   transition-delay: 500ms;
+  height: 60px;
 }
-/* line 48, style/sass/component/_team-slider.scss */
+/* line 49, style/sass/component/_team-slider.scss */
 .team-slider .slide.open .slide-container .close {
   top: 20px;
 }
-/* line 51, style/sass/component/_team-slider.scss */
+/* line 52, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container {
   position: absolute;
   width: 1200px;
@@ -299,7 +300,7 @@ Team Slider
   background-size: cover;
   background-position: top left;
 }
-/* line 61, style/sass/component/_team-slider.scss */
+/* line 62, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close {
   display: inline-block;
   vertical-align: middle;
@@ -312,7 +313,7 @@ Team Slider
   right: 260px;
   transition: 300ms top linear;
 }
-/* line 72, style/sass/component/_team-slider.scss */
+/* line 73, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close:before {
   content: "";
   font-family: "FontAwesome";
@@ -328,15 +329,15 @@ Team Slider
   width: 0.9em;
   height: 1em;
 }
-/* line 87, style/sass/component/_team-slider.scss */
+/* line 88, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close:hover {
   border-color: #e60031;
 }
-/* line 89, style/sass/component/_team-slider.scss */
+/* line 90, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close:hover:before {
   color: #e60031;
 }
-/* line 95, style/sass/component/_team-slider.scss */
+/* line 96, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info {
   position: absolute;
   bottom: 0;
@@ -350,35 +351,38 @@ Team Slider
   padding: 20px;
   font-size: 16px;
   line-height: 1.3em;
+  text-align: left;
+  padding-left: 150px;
 }
-/* line 109, style/sass/component/_team-slider.scss */
+/* line 112, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .name {
-  float: left;
-  margin-left: 50px;
   width: 400px;
   text-align: left;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 30px;
   font-family: "Lato";
   text-transform: uppercase;
   font-family: "Fjalla One";
   font-weight: bold;
 }
-/* line 116, style/sass/component/_team-slider.scss */
+/* line 120, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 120px;
 }
-/* line 119, style/sass/component/_team-slider.scss */
+/* line 125, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li {
   display: inline-block;
   vertical-align: middle;
   padding: 0 10px;
 }
-/* line 123, style/sass/component/_team-slider.scss */
+/* line 129, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li:not(:first-child) {
   border-left: 1px solid white;
 }
-/* line 126, style/sass/component/_team-slider.scss */
+/* line 132, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li .play {
   display: block;
   width: 25px;
@@ -387,9 +391,37 @@ Team Slider
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 140, style/sass/component/_team-slider.scss */
-.team-slider .slide:first-of-type .slide-container .info .name {
-  margin-left: 100px;
+/* line 142, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container .info .bio {
+  opacity: 0;
+  transition: 200ms all linear 250ms;
+  display: block;
+  clear: both;
+  text-align: left;
+  margin-top: 1em;
+  padding-right: 360px;
+}
+/* line 150, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container .info .bio .label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 154, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container .info .bio .stat {
+  margin-bottom: 5px;
+}
+/* line 159, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container .info.open {
+  height: 70%;
+  transition-delay: 0ms;
+}
+/* line 162, style/sass/component/_team-slider.scss */
+.team-slider .slide .slide-container .info.open .bio {
+  opacity: 1;
+}
+/* line 170, style/sass/component/_team-slider.scss */
+.team-slider .slide:first-of-type .slide-container .info {
+  padding-left: 150px;
 }
 
 /*
