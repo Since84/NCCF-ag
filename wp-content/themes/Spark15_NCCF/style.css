@@ -276,6 +276,7 @@ Team Slider
 /* line 39, style/sass/component/_team-slider.scss */
 .team-slider .slide:hover .closed.background, .team-slider .slide.open .closed.background {
   opacity: 0;
+  width: 0;
 }
 /* line 41, style/sass/component/_team-slider.scss */
 .team-slider .slide:hover .slide-container .info, .team-slider .slide.open .slide-container .info {
@@ -306,20 +307,19 @@ Team Slider
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  border: 1px solid white;
   border-radius: 50%;
   position: absolute;
   top: -60px;
   right: 200px;
   transition: 300ms top linear;
 }
-/* line 74, style/sass/component/_team-slider.scss */
+/* line 73, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close:before {
   content: "";
   font-family: "FontAwesome";
   color: white;
   display: inline-block;
-  font-size: 16px;
+  font-size: 36px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -329,15 +329,15 @@ Team Slider
   width: 0.9em;
   height: 1em;
 }
-/* line 89, style/sass/component/_team-slider.scss */
+/* line 88, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close:hover {
   border-color: #e60031;
 }
-/* line 91, style/sass/component/_team-slider.scss */
+/* line 90, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container span.close:hover:before {
   color: #e60031;
 }
-/* line 97, style/sass/component/_team-slider.scss */
+/* line 96, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info {
   position: absolute;
   bottom: 0;
@@ -352,7 +352,7 @@ Team Slider
   font-size: 16px;
   line-height: 1.3em;
 }
-/* line 111, style/sass/component/_team-slider.scss */
+/* line 110, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .name {
   float: left;
   margin-left: 50px;
@@ -364,22 +364,22 @@ Team Slider
   font-family: "Fjalla One";
   font-weight: bold;
 }
-/* line 118, style/sass/component/_team-slider.scss */
+/* line 117, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control {
   float: left;
   margin-left: 120px;
 }
-/* line 121, style/sass/component/_team-slider.scss */
+/* line 120, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li {
   display: inline-block;
   vertical-align: middle;
   padding: 0 10px;
 }
-/* line 125, style/sass/component/_team-slider.scss */
+/* line 124, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li:not(:first-child) {
   border-left: 1px solid white;
 }
-/* line 128, style/sass/component/_team-slider.scss */
+/* line 127, style/sass/component/_team-slider.scss */
 .team-slider .slide .slide-container .info .control li .play {
   display: block;
   width: 25px;
@@ -388,7 +388,7 @@ Team Slider
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 142, style/sass/component/_team-slider.scss */
+/* line 141, style/sass/component/_team-slider.scss */
 .team-slider .slide:first-of-type .slide-container .info .name {
   margin-left: 100px;
 }
