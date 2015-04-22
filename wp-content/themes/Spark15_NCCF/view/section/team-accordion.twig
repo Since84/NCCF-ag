@@ -21,13 +21,13 @@
 	<div class="pics">
 		<ul class="accordion">
 		{% for member in feed %}
-		<li class="member-pic slide" data-index="{{ loop.index }}" style="background-image:url({{ member.background.url }});">
+		<li class="member-pic slide videojs" data-index="{{ loop.index }}" style="background-image:url({{ member.background.url }});">
 			<span class="closed background" style="background-image:url({{ member.preview_bar.url }})"></span>
 			<span class="video_trigger"></span>
 			<div class="md-modal md-effect-13" id="modal-13">
 				<div class="md-content">
-					<iframe width="500" height="300" data-src="https://www.youtube.com/embed/{{ member.youtube_id }}" frameborder="0" allowfullscreen></iframe>			
-					<button class="md-close">Close</button>
+					<iframe width="800" height="600" data-src="https://www.youtube.com/embed/{{ member.youtube_id }}" frameborder="0" allowfullscreen></iframe>			
+					<button class="md-close"></button>
 				</div>
 			</div>
 		{% endfor %}

@@ -14,6 +14,7 @@
   		events: {
   			 'click .video .thumb': 'openVideo'
   			,'click .video-link': 'openVideo'
+  			,'click .video_trigger': 'openVideo'
   			,'click .md-modal .md-close': 'closeVideo'
   			,'click .mobile-nav-trigger': 'toggleNav'
   			,'click .member-bio .name': 'openMember'
