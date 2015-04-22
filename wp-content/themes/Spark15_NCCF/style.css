@@ -260,7 +260,7 @@ Team Slider
   width: 457px;
   height: 100%;
   opacity: 1;
-  transition: .5s opacity linear;
+  transition: .5s all linear;
   background-size: cover;
   transform: skew(18deg);
 }
