@@ -138,5 +138,10 @@ Team Slider
 				}
 			}
 		}
+		&:first-of-type{
+			.slide-container .info .name{
+				margin-left: 100px;
+			}
+		}
 	}
 }

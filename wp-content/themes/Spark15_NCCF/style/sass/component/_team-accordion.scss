@@ -24,6 +24,8 @@ Team Accordion
 			.member-bio{
 				width: 250px;
 				font-weight: 300;
+				margin-bottom: 10px;
+				transition: 500ms margin-bottom linear;
 				.name{
 					@include header2;
 					font-family: "Fjalla One";
@@ -31,10 +33,10 @@ Team Accordion
 					cursor: pointer;
 				}
 				.stats{
-					height: 0;
+					max-height: 0;
 					overflow: hidden;
 					font-size: 14px;
-					transition: 500ms height ease-out 0ms, 0ms margin-top ease-out 450ms, 200ms opacity linear 550ms;
+					transition: 500ms max-height ease-out 0ms, 0ms margin-top ease-out 450ms, 200ms opacity linear 550ms;
 					opacity: 0;
 					line-height: 1.3em;
 					text-transform: uppercase;
@@ -52,11 +54,12 @@ Team Accordion
 					}
 				}
 				&.open{
+					margin-bottom: 40px;
 					.name{
 						color: $yellow;
 					}
 					.stats{
-						height: 290px;
+						max-height: 290px;
 						margin-top: 10px;
 						opacity: 1;
 						transition-delay: 0 opacity;

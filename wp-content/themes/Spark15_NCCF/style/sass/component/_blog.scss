@@ -5,6 +5,7 @@ Blog
 */
 .blogroll {
 	display: flex;
+	margin-top: 60px;
 }
 .blog-list{
 	display: inline-block;
@@ -33,6 +34,17 @@ Blog
 		margin-bottom: 1em;
 		width: 105%;
 		margin-left: 8px;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 200%;
+			height: 100%;
+			position: absolute;
+			background: $yellow;
+			right: -199%;
+			top: 0;
+		}
 
 		& > * { 
 			transform: skew(18deg); 

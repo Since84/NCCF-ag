@@ -20,6 +20,11 @@ html body{
 	}
 }
 
+body.nccf{
+	overflow-x: hidden;
+	padding-top: 90px;
+}
+
 a{
 	color: white;
 	text-decoration: none;
@@ -45,7 +50,7 @@ a{
 	display: block;
 	position: relative;
 	margin: auto;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 
@@ -53,12 +58,16 @@ a{
 .header.container{
 	z-index: 10;
 }
-header{
+header.main{
+	position: fixed;
+	top: 0;
 	height: 90px;
 	width: 100%;
-	background: $black;
-	position: relative;
+	background: $black; 
 	z-index: 2000;
+	.container{
+		height: 100%;
+	}
 	.logo{
 		position: absolute;
 		display: block;
@@ -343,19 +352,22 @@ div.wpcf7{
 
 @import "component/blog";
 
-footer.container{
-	display: block;
-	// height: 90px;
-	padding: 20px; 
+footer.main {
+	width: 100%;
 	background: $black;
 	position: relative;
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-	.logo{
-		display: inline-block;
-		vertical-align: middle;
-		margin-right: 1em;
+	.container{
+		display: block;
+		// height: 90px;
+		padding: 20px; 
+		position: relative;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		.logo{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 1em;
+		}
 	}
 }
-
