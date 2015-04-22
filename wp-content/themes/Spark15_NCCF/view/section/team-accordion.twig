@@ -5,13 +5,14 @@
 		{% for member in feed %}
 		<li class="member-bio slide" data-index="{{ loop.index }}">
 			<div class="slide-container">
+				<h2 class="name">{{ member.name }}</h2>
 				<div class="info">
-					<span class="name">{{ member.name }}</span>
 					<ul class="stats">
-						<li><span class="label">Height: </span> 6'1</li>				
-						<li><span class="label">Weight: </span> 250lb</li>
-						<li class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</li>
+						{%  for stat in member.statistics %}
+						<li class="stat"><span class="label">Height: </span> 6'1</li>				
+						{% endfor %}
 					</ul>
+					<div class="description">{{ member.bio }}</div>
 				</div>
 			</div>
 		{% endfor %}
@@ -22,6 +23,13 @@
 		{% for member in feed %}
 		<li class="member-pic slide" data-index="{{ loop.index }}" style="background-image:url({{ member.background.url }});">
 			<span class="closed background" style="background-image:url({{ member.preview_bar.url }})"></span>
+			<span class="video_trigger"></span>
+			<div class="md-modal md-effect-13" id="modal-13">
+				<div class="md-content">
+					<iframe width="500" height="300" data-src="https://www.youtube.com/embed/{{ member.youtube_id }}" frameborder="0" allowfullscreen></iframe>			
+					<button class="md-close">Close</button>
+				</div>
+			</div>
 		{% endfor %}
 		</ul>
 	</div>
