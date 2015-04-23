@@ -1125,14 +1125,34 @@ Blog
   min-height: 100%;
 }
 /* line 107, style/sass/component/_blog.scss */
+.blog .blog-post-preview .video_trigger, .blog .blog-post .video_trigger, .single .blog-post-preview .video_trigger, .single .blog-post .video_trigger {
+  position: relative;
+  display: inline-block;
+  width: 340px;
+  height: 225px;
+  margin-right: 30px;
+}
+/* line 113, style/sass/component/_blog.scss */
+.blog .blog-post-preview .video_trigger:before, .blog .blog-post .video_trigger:before, .single .blog-post-preview .video_trigger:before, .single .blog-post .video_trigger:before {
+  content: "";
+  background-image: url("style/images/play_button_white.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+}
+/* line 125, style/sass/component/_blog.scss */
 .blog .blog-post-preview .post-content, .blog .blog-post .post-content, .single .blog-post-preview .post-content, .single .blog-post .post-content {
   flex: 1;
 }
-/* line 109, style/sass/component/_blog.scss */
+/* line 127, style/sass/component/_blog.scss */
 .blog .blog-post-preview .post-content .post-text a:hover, .blog .blog-post .post-content .post-text a:hover, .single .blog-post-preview .post-content .post-text a:hover, .single .blog-post .post-content .post-text a:hover {
   color: white;
 }
-/* line 113, style/sass/component/_blog.scss */
+/* line 131, style/sass/component/_blog.scss */
 .blog .blog-post-preview .post-title, .blog .blog-post .post-title, .single .blog-post-preview .post-title, .single .blog-post .post-title {
   font-size: 30px;
   font-family: "Lato";
@@ -1141,39 +1161,52 @@ Blog
   font-weight: bold;
   margin-bottom: 25px;
 }
-/* line 117, style/sass/component/_blog.scss */
+/* line 135, style/sass/component/_blog.scss */
 .blog .blog-post-preview .post-text, .blog .blog-post .post-text, .single .blog-post-preview .post-text, .single .blog-post .post-text {
   line-height: 1.6em;
 }
-/* line 121, style/sass/component/_blog.scss */
+/* line 139, style/sass/component/_blog.scss */
 .blog .blog-post, .single .blog-post {
   flex: 1;
   display: block;
   width: 100%;
 }
-/* line 125, style/sass/component/_blog.scss */
+/* line 143, style/sass/component/_blog.scss */
 .blog .blog-post .post, .single .blog-post .post {
   display: block;
 }
-/* line 128, style/sass/component/_blog.scss */
+/* line 146, style/sass/component/_blog.scss */
 .blog .blog-post .thumb, .single .blog-post .thumb {
   width: 100%;
   height: auto;
   margin-bottom: 1em;
+  position: relative;
 }
-/* line 132, style/sass/component/_blog.scss */
+/* line 151, style/sass/component/_blog.scss */
 .blog .blog-post .thumb img, .single .blog-post .thumb img {
   height: auto;
 }
-/* line 134, style/sass/component/_blog.scss */
+/* line 155, style/sass/component/_blog.scss */
+.blog .blog-post .video_trigger:before, .single .blog-post .video_trigger:before {
+  content: "";
+  background-image: url("style/images/play_button_white.png");
+  background-size: cover;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+}
+/* line 168, style/sass/component/_blog.scss */
 .blog .blog-post .post-content, .single .blog-post .post-content {
   flex: none;
 }
-/* line 137, style/sass/component/_blog.scss */
+/* line 171, style/sass/component/_blog.scss */
 .blog .blog-post .date, .single .blog-post .date {
   margin-right: 40px;
 }
-/* line 140, style/sass/component/_blog.scss */
+/* line 174, style/sass/component/_blog.scss */
 .blog .blog-post .comments, .single .blog-post .comments {
   font-family: "Roboto";
   font-weight: normal;

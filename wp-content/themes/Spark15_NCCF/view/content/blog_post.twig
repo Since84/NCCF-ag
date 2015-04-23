@@ -9,8 +9,18 @@
 		<span class="comments">{{ post.comment_count }} Comments</span>
 	</div>
 	<div class="post">
-		<a class="thumb" href="{{ post.permalink }}"> 
-			<img src="{{ post.thumbnail.src }}"/>
+		<a class="thumb videojs" href="{{ post.permalink }}"> 
+			{% if post.video_id %}
+			<span class="video_trigger"><img src="http://img.youtube.com/vi/{{ post.video_id }}/0.jpg"/></span>
+			<div class="md-modal md-effect-13" id="modal-13">
+				<div class="md-content">
+					<iframe width="800" height="600" data-src="https://www.youtube.com/embed/{{ post.video_id }}" frameborder="0" allowfullscreen></iframe>			
+					<button class="md-close"></button>
+				</div>
+			</div>
+			{% else %}
+				<img src="{{ post.thumbnail.src }}"/>
+			{% endif %}
 		</a>
 		<div class="post-content">
 			<h2 class="post-title"><a href="{{ post.permalink }}">{{ post.post_title }}</a></h2>
