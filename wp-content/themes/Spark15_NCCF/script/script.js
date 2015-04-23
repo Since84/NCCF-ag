@@ -36,7 +36,9 @@
 				 .find('iframe').attr('src', src);	    	
 	    }
 	    ,closeVideo: function(e){
-	    	var $elem = $(e.currentTarget).parents('.md-modal').removeClass('md-show');
+	    	var $elem = $(e.currentTarget).parents('.md-modal');
+	    	$elem.removeClass('md-show')
+	    		 .find('iframe').attr('src','');
 	    }
 	    ,toggleNav: function(){
 	    	$('body').toggleClass('nav-open');

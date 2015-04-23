@@ -564,9 +564,9 @@ Team Accordion
   background-image: url("style/images/play_button_white.png");
   background-position: center;
   background-size: cover;
-  top: 0;
-  right: 400px;
-  bottom: 0;
+  top: 40px;
+  right: 40px;
+  bottom: auto;
   left: auto;
   margin: auto;
   opacity: 0;
@@ -703,7 +703,7 @@ header.main .logo {
   position: absolute;
   width: 200px;
   height: 100%;
-  top: 90px;
+  top: 120px;
   right: -200px;
   background: rgba(0, 0, 0, 0.75);
   transition: right 500ms ease-in-out;
@@ -961,11 +961,10 @@ div.wpcf7:before {
   border: none;
   width: 100%;
   background: none;
-  text-transform: uppercase;
   font-size: 16px;
   margin-left: 15px;
 }
-/* line 336, style/sass/style.scss */
+/* line 335, style/sass/style.scss */
 .wpcf7-form input[type="submit"] {
   background: none;
   border: none;
@@ -975,13 +974,13 @@ div.wpcf7:before {
   font-size: 16px;
 }
 
-/* line 346, style/sass/style.scss */
+/* line 345, style/sass/style.scss */
 .sponsors {
   background: url("style/images/sponsor-bg.jpg");
   text-align: center;
   padding: 20px;
 }
-/* line 351, style/sass/style.scss */
+/* line 350, style/sass/style.scss */
 .sponsors .sponsor img {
   width: 150px;
   height: auto;
@@ -1184,13 +1183,13 @@ Blog
   vertical-align: middle;
 }
 
-/* line 360, style/sass/style.scss */
+/* line 359, style/sass/style.scss */
 footer.main {
   width: 100%;
   background: black;
   position: relative;
 }
-/* line 364, style/sass/style.scss */
+/* line 363, style/sass/style.scss */
 footer.main .container {
   display: block;
   padding: 20px;
@@ -1199,7 +1198,7 @@ footer.main .container {
   color: white;
   text-transform: uppercase;
 }
-/* line 372, style/sass/style.scss */
+/* line 371, style/sass/style.scss */
 footer.main .container .logo {
   display: inline-block;
   vertical-align: middle;
